@@ -1,0 +1,162 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: RobotoMono NerdFont, Roboto, Noto Sans CJK JP, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #ffffff;
+}
+
+window > box {
+    /*margin: 0 0 0 16px;*/
+    background: #262626;/*#282a36;*/
+    border-bottom: 2px transparent;
+    color: white;
+}
+#workspaces {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button {
+    padding: 0 3px;
+    margin: 0px;
+    min-width: 0px;
+    color: #ffffff;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+}
+
+#workspaces button.focused {
+    padding: 0 3px;
+    border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #262626;
+    /*border-radius: 3px;*/
+}
+
+#window {
+    /*margin: 0 240;*/
+}
+
+#mode {
+    background: #64727D;
+    border-bottom: 2px solid #ffffff;
+}
+
+#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-disk, #custom-weather, #custom-keyboard-layout, #tray, #mode, #idle_inhibitor {
+   padding: 0 2px;
+    margin: 0 5px;
+    background: transparent;
+    border-top: 2px solid transparent;
+}
+
+#clock {
+    border-bottom: 2px solid #ff6e67;
+}
+
+#battery {
+    border-bottom: 2px solid #f1fa8c;
+}
+
+#battery.charging {
+    /*border-bottom: 2px solid #5af78e;*/
+    animation-name :blink;
+    animation-duration: 1.0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    0%{
+        border-bottom: 2px solid transparent;
+    }
+    100% {
+        border-bottom: 2px solid #f1fa8c;
+    }
+}
+
+@keyframes blinkLow {
+    from {
+        border-bottom: 2px solid transparent;
+    }
+    to {
+        border-bottom: 2px solid #ff6e67;
+    }
+}
+
+*#battery.critical:not(.charging) {
+    animation-name: blinkLow;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu {
+    border-bottom: 2px solid #50fa7b;
+}
+
+#memory {
+    border-bottom: 2px solid #8be9fd;
+}
+
+#backlight {
+    border-bottom: 2px solid #90b1b1;
+}
+
+#network {
+    border-bottom: 2px solid #8be9fd;
+}
+
+#network.disconnected {
+    border-bottom: 2px solid #ff676e; /*#ff676e;*/
+}
+
+#pulseaudio {
+    border-bottom: 2px solid #8484fe;
+}
+
+#pulseaudio.muted {
+    border-bottom: 2px solid #90b1b1;
+}
+
+#custom-disk {
+    border-bottom: 2px solid #50fa7b;
+}
+
+#custom-weather {
+    border-bottom: 2px solid #8484fe; 
+}
+
+#custom-keyboard-layout {
+    border-bottom: 2px solid #f1fa8c; 
+}
+
+#temperature {
+    background: #f0932b;
+}
+
+#temperature.critical {
+    background: #eb4d4b;
+}
+
+#tray {
+    border-bottom: 2px solid #ff676e;
+}
+
+#idle_inhibitor {
+    background-color: #262626;
+}
+
+#idle_inhibitor.activated {
+    background-color: #ecf0f1;
+    color: #2d3436;
+}
