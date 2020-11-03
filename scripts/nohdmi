@@ -1,0 +1,17 @@
+#!/bin/bash
+FIRST_DISPLAY=$(swaymsg -t get_outputs | grep name | head -n 1 | cut -f4 -d"\"")
+SECOND_DISPLAY=$(swaymsg -t get_outputs | grep name | tail -n 1 | cut -f4 -d"\"")
+if [ $FIRST_DISPLAY != $SECOND_DISPLAY ]; then
+    swaymsg output $SECOND_DISPLAY disable
+    swaymsg output $FIRST_DISPLAY enable
+    swaymsg workspace 1 output $FIRST_DISPLAY
+    swaymsg workspace 2 output $FIRST_DISPLAY
+    swaymsg workspace 3 output $FIRST_DISPLAY
+    swaymsg workspace 4 output $FIRST_DISPLAY
+    swaymsg workspace 5 output $FIRST_DISPLAY
+    swaymsg workspace 6 output $FIRST_DISPLAY
+    swaymsg workspace 7 output $FIRST_DISPLAY
+    swaymsg workspace 8 output $FIRST_DISPLAY
+    swaymsg workspace 9 output $FIRST_DISPLAY
+    swaymsg workspace 10 output $FIRST_DISPLAY
+fi

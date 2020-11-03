@@ -1,0 +1,4 @@
+#!/bin/bash
+grim /tmp/screenshot.png
+#xclip -selection c -t image/png /tmp/screenshot.png
+wl-copy < /tmp/screenshot.png

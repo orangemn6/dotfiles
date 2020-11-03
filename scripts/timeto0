@@ -1,0 +1,16 @@
+#!/bin/bash
+sleeptime=10
+full=$(cat /sys/class/power_supply/BAT1/charge_full)
+a=$(cat /sys/class/power_supply/BAT1/charge_now)
+sleep $sleeptime
+b=$(cat /sys/class/power_supply/BAT1/charge_now)
+timeto0=0
+if [ "$a" -gt "$b" ]
+then
+	timeto0=$[ $sleeptime * $b / ( $a - $b ) ]
+elif [ "$a" -lt "$b" ]
+then
+	timeto0=$[ $sleeptime * ( $full - $b ) / ( $b - $a ) ]
+fi
+echo $[ 100 * $b / $full ].$[ ( 10000 * $b / $full )%100 ]%
+date +"%T" -d "now + $timeto0 sec"
