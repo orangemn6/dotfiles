@@ -1,307 +1,168 @@
-# Oxide theme
-#
-# Author: Diki Ananta <diki1aap@gmail.com>
-# Repository: https://github.com/dikiaap/dotfiles
-# License: MIT
-# i3 config file (v4)
-
-# font for window titles and bar
-font pango:Source Sans Pro 10
-exec feh /home/jacob/.wallpaper.png --bg-fill
-# use win key
+# Set mod variable to super key
 set $mod Mod4
 
-# use these keys for focus, movement, and resize directions
-set $left   j
-set $down   k
-set $up     l
-set $right  semicolon
+# Turn borders off
+for_window [class="^.*"] border pixel 0
 
-# define names for workspaces
-set $ws1    "1:   Terminal "
-set $ws2    "2:   Code "
-set $ws3    "3:   Chromium "
-set $ws4    "4:   Files "
-set $ws5    "5:   Documents "
-set $ws6    "6:   Media "
-set $ws7    "7:   Design "
-set $ws8    "8:   Chat "
-set $ws9    "9:   General "
-set $ws10   "10:   Settings "
+exec ~/.fehbg
 
-# use $mod+Mouse to drag floating windows to their wanted position
+# Change gap size
+gaps outer 4
+gaps inner 20
+gaps top 62
+
+# Drag floating windows
 floating_modifier $mod
 
-# control focused window when follows the mouse movements
-focus_follows_mouse no
+# Start a URxvt terminal emulator instance
+bindsym $mod+Return exec alacritty
 
-# window border settings
-default_border          none
-default_floating_border none
+# Kill focused window
+bindsym $mod+q kill
 
-# hiding borders adjacent to the screen edges
-hide_edge_borders none
+# screenshot
+bindsym $mod+F4 exec --no-startup-id scrot
 
-# set popups during fullscreen mode
-popup_during_fullscreen smart
+# Start rofi drun menu
+bindsym $mod+space exec ~/Scripts/rofi/launch.sh drun 
 
-# start a terminal
-bindsym $mod+Return workspace $ws1; exec --no-startup-id alacritty
+# Bind key to betterlockscreen (-git)
+bindsym --release $mod+l exec betterlockscreen -l blur
 
-# start a program launcher
-#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -fn 'Source Sans Pro-10' -nb '#212121' -sb '#2b83a6' -sf '#ffffff'"
-bindsym $mod+d exec --no-startup-id rofi -show drun
+# Set up screenshots and partial screenshots
+bindsym --release Print exec maim ~/Pictures/Screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
+bindsym --release Shift+Print exec maim -s ~/Pictures/Screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
 
-# switching window with win+tab
-bindsym $mod+Tab exec --no-startup-id rofi -show window
+# Bind audio keys to pactl volume control
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 
-# kill focused window
-bindsym $mod+Shift+q kill
+# Bind brightness keys to light interface
+bindsym $mod+F7 exec light -A 5
+bindsym $mod+F6 exec light -U 5
 
-# change focus
-bindsym $mod+$left  focus left
-bindsym $mod+$down  focus down
-bindsym $mod+$up    focus up
-bindsym $mod+$right focus right
+# Move focus with the arrow keys
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left   focus left
-bindsym $mod+Down   focus down
-bindsym $mod+Up     focus up
-bindsym $mod+Right  focus right
+# Move windows with shift + arrow keys
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
 
-# move focused window
-bindsym $mod+Shift+$left    move left
-bindsym $mod+Shift+$down    move down
-bindsym $mod+Shift+$up      move up
-bindsym $mod+Shift+$right   move right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left     move left
-bindsym $mod+Shift+Down     move down
-bindsym $mod+Shift+Up       move up
-bindsym $mod+Shift+Right    move right
-
-# split in horizontal orientation
+# Split in specified direction
 bindsym $mod+h split h
-
-# split in vertical orientation
 bindsym $mod+v split v
 
-# enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+# Enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen
 
-# change container layout
+# Change container layout
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-# toggle tiling / floating
+# Toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# Change focus between tiling / floating windows
+bindsym $mod+Control+space focus mode_toggle
 
-# focus the parent container
-bindsym $mod+a focus parent
+# Bind keys to switch to next workspace
+bindsym $mod+bracketright workspace next
+bindsym $mod+bracketleft workspace prev
 
-# focus the child container
-bindsym $mod+Shift+a focus child
+# Switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
 
-# move the currently focused window to the scratchpad
-bindsym $mod+Shift+minus move scratchpad
+# Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
 
-# show the next scratchpad window or hide the focused scratchpad window
-bindsym $mod+minus scratchpad show
-
-# move focused floating window to the center of all outputs
-bindsym $mod+Shift+h move absolute position center
-
-# move focused floating window to the current position of the cursor
-bindsym $mod+Shift+m move position mouse
-
-# set a window to stick to the glass
-bindsym $mod+Shift+s sticky toggle
-
-# sticky preview for media
-bindsym $mod+Shift+p fullscreen disable; floating enable; resize set 350 px 197 px; sticky enable; move window to position 1006 px 537 px
-
-# shortcut to change window border
-bindsym $mod+t border normal    0
-bindsym $mod+y border pixel     1
-bindsym $mod+u border none
-
-# switch to workspace
-bindsym $mod+1 workspace $ws1
-bindsym $mod+2 workspace $ws2
-bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace $ws4
-bindsym $mod+5 workspace $ws5
-bindsym $mod+6 workspace $ws6
-bindsym $mod+7 workspace $ws7
-bindsym $mod+8 workspace $ws8
-bindsym $mod+9 workspace $ws9
-bindsym $mod+0 workspace $ws10
-
-# move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $ws1
-bindsym $mod+Shift+2 move container to workspace $ws2
-bindsym $mod+Shift+3 move container to workspace $ws3
-bindsym $mod+Shift+4 move container to workspace $ws4
-bindsym $mod+Shift+5 move container to workspace $ws5
-bindsym $mod+Shift+6 move container to workspace $ws6
-bindsym $mod+Shift+7 move container to workspace $ws7
-bindsym $mod+Shift+8 move container to workspace $ws8
-bindsym $mod+Shift+9 move container to workspace $ws9
-bindsym $mod+Shift+0 move container to workspace $ws10
-
-# shortcut applications
-bindsym $mod+F1                 exec gkamus
-bindsym $mod+F2 workspace $ws2; exec subl
-bindsym $mod+F3 workspace $ws3; exec chromium-browser
-bindsym $mod+F4 workspace $ws4; exec pcmanfm
-bindsym $mod+F5 workspace $ws5; exec evince
-bindsym $mod+F6 workspace $ws6; exec audacious
-bindsym $mod+F7 workspace $ws7; exec gcolor2
-bindsym $mod+F8 workspace $ws8; exec telegram
-bindsym $mod+F9 workspace $ws9; exec go-for-it
-bindsym Print                   exec --no-startup-id gnome-screenshot
-bindsym $mod+Print              exec --no-startup-id gnome-screenshot -a
-bindsym $mod+Shift+x            exec --no-startup-id i3lock-fancy -f Source-Sans-Pro
-
-# volume
-bindsym XF86AudioLowerVolume    exec --no-startup-id amixer -q -D pulse sset Master 5%- unmute
-bindsym XF86AudioRaiseVolume    exec --no-startup-id amixer -q -D pulse sset Master 5%+ unmute
-bindsym XF86AudioMute           exec --no-startup-id amixer -q -D pulse sset Master toggle
-
-# reload the configuration file
+# Reload the configuration file
 bindsym $mod+Shift+c reload
 
-# restart i3 inplace
+# Restart i3 inplace
 bindsym $mod+Shift+r restart
 
-# manage i3 session
-bindsym $mod+Shift+e exec --no-startup-id i3-nagbar -t warning -f "pango:Hack 9" -m "Do you really want to exit?" -B "    Exit " "i3-msg exit" -B "    Lock " "pkill i3-nagbar && i3lock-fancy -f Source-Sans-Pro" -B "    Reboot " "pkill i3-nagbar && reboot" -B "    Shutdown " "pkill i3-nagbar && shutdown -h now"
+# Exit i3
+bindsym $mod+Shift+e exec ~/Scripts/rofi/launch.sh powermenu
 
-# resize window
-bindsym $mod+r mode "  "
-mode "  " {
-    # pressing left and up will shrink the window's width and height
-    # pressing right and down will grow the window's width and height
-    bindsym $left   resize shrink width 10 px or 10 ppt
-    bindsym $down   resize grow height 10 px or 10 ppt
-    bindsym $up     resize shrink height 10 px or 10 ppt
-    bindsym $right  resize grow width 10 px or 10 ppt
+# Add resize keybindings in place of mode
+bindsym $mod+Control+Left resize shrink width 1 px or 1
+bindsym $mod+Control+Down resize grow height 1 px or 1
+bindsym $mod+Control+Up resize shrink height 1 px or 1
+bindsym $mod+Control+Right resize grow width 1 px or 1
+bindsym $mod+Shift+Control+Left resize shrink width 1 px or 1
+bindsym $mod+Shift+Control+Down resize grow height 1 px or 1
+bindsym $mod+Shift+Control+Up resize shrink height 1 px or 1
+bindsym $mod+Shift+Control+Right resize grow width 1 px or 1
 
-    # same bindings, but for the arrow keys
-    bindsym Left    resize shrink width 10 px or 10 ppt
-    bindsym Down    resize grow height 10 px or 10 ppt
-    bindsym Up      resize shrink height 10 px or 10 ppt
-    bindsym Right   resize grow width 10 px or 10 ppt
+# mpv music controller bindings
+set $controller ~/Scripts/mpv-controller.sh
+bindsym $mod+Shift+P exec $controller pause
+bindsym $mod+Shift+bracketleft exec $controller prev
+bindsym $mod+Shift+bracketright exec $controller next
+bindsym $mod+Shift+semicolon exec $controller skip -10
+bindsym $mod+Shift+apostrophe exec $controller skip 10
+bindsym $mod+Shift+comma exec $controller skipper -5
+bindsym $mod+Shift+period exec $controller skipper 5
+bindsym $mod+Shift+m exec ~/Scripts/rofi/launch.sh music
+bindsym $mod+Shift+l exec $controller stop
+bindsym $mod+Shift+o exec $controller info
+bindsym $mod+Shift+minus exec $controller vol -10
+bindsym $mod+Shift+equal exec $controller vol 10
 
-    # back to normal: Enter or win+r
-    bindsym Return mode "default"
-    bindsym $mod+r mode "default"
-}
+# Always float certain windows
+for_window [class="mpv"] floating enable
+for_window [class="Pavucontrol"] floating enable
 
-# set specific windows to floating mode
-for_window [window_role="app"]                      floating enable
-for_window [window_role="pop-up"]                   floating enable
-for_window [window_role="task_dialog"]              floating enable
-for_window [title="Preferences$"]                   floating enable
-for_window [class="File-roller"]                    floating enable
-for_window [class="Galculator"]                     floating enable
-for_window [class="Gcolor2"]                        floating enable
-for_window [class="Gkamus"]                         floating enable
-for_window [class="Go-for-it"]                      floating enable
-for_window [class="KBBI-Qt"]                        floating enable
-for_window [class="Lightdm-gtk-greeter-settings"]   floating enable
-for_window [class="Lxappearance"]                   floating enable
-for_window [class="Menu"]                           floating enable
-for_window [class="Nm-connection-editor"]           floating enable
-for_window [class="Software-properties-gtk"]        floating enable
+# Make sure fonts are loaded right
+exec_always xset +fp /home/jacob/.fonts/
+exec_always xset fp rehash
 
-# assign program to workspace
-assign [class="Alacritty"]          → $ws1
-assign [class="terminal"]           → $ws1
-assign [class="Sublime"]            → $ws2
-assign [class="Chromium"]           → $ws3
-assign [class="Firefox"]            → $ws3
-assign [class="File-roller"]        → $ws4
-assign [class="Pcmanfm"]            → $ws4
-assign [class="Evince"]             → $ws5
-assign [class="ghostwriter"]        → $ws5
-assign [class="libreoffice"]        → $ws5
-assign [class="Audacious"]          → $ws6
-assign [class="vlc"]                → $ws6
-assign [class="Gimp"]               → $ws7
-assign [class="Inkscape"]           → $ws7
-assign [class="Hexchat"]            → $ws8
-assign [class="Telegram"]           → $ws8
-assign [class="Upwork"]             → $ws8
-assign [class="Galculator"]         → $ws9
-assign [class="Gnome-font-viewer"]  → $ws9
-assign [class="Go-for-it"]          → $ws9
-assign [class="Gucharmap"]          → $ws9
-assign [class="KeePassXC"]          → $ws9
-assign [class="Transmission-gtk"]   → $ws9
-assign [class="Bleachbit"]          → $ws10
-assign [class="Bum"]                → $ws10
-assign [class="Dconf-editor"]       → $ws10
-assign [class="Gnome-disks"]        → $ws10
-assign [class="GParted"]            → $ws10
-assign [class="Grub-customizer"]    → $ws10
-assign [class="Hardinfo"]           → $ws10
-assign [class="Lxappearance"]       → $ws10
-assign [class="Lxinput"]            → $ws10
-assign [class="Lxrandr"]            → $ws10
-assign [class="Lxtask"]             → $ws10
-assign [class="Menu"]               → $ws10
-assign [class="Obconf"]             → $ws10
-assign [class="Lightdm-gtk-greeter-settings"]   → $ws10
-assign [class="Software-properties-gtk"]        → $ws10
+# Run startup wallpaper
+exec_always bash -c "feh --bg-fill $(cat ~/Scripts/default-bg.txt | tr -d '\n')"
 
-# class                 border  backgr. text    indicator child_border
-client.focused          #2b83a6 #2b83a6 #ffffff #dddddd   #2b83a6
-client.focused_inactive #212121 #212121 #86888c #292d2e   #5a5a5a
-client.unfocused        #212121 #212121 #86888c #292d2e   #5a5a5a
-client.urgent           #d64e4e #d64e4e #ffffff #d64e4e   #d64e4e
-client.placeholder      #212121 #0c0c0c #ffffff #212121   #262626
-client.background       #212121
+# Allow scripts to interface with dbus
+exec_always --no-startup-id ~/Scripts/Xdbus.sh
 
-# start i3bar to display a workspace bar
-bar {
-    status_command          i3blocks
-    bindsym button4         nop
-    bindsym button5         nop
-    position                bottom
-    tray_output             primary
-    separator_symbol        "·"
-    workspace_buttons       yes
-    strip_workspace_numbers yes
+# Start notification daemon
+exec_always --no-startup-id dunst
 
-    colors {
-        background  #212121
-        statusline  #dddddd
-        separator   #666666
-        # class             border  backgr. text
-        focused_workspace   #2b83a6 #2b83a6 #ffffff
-        active_workspace    #212121 #212121 #ffffff
-        inactive_workspace  #212121 #212121 #86888c
-        urgent_workspace    #d64e4e #d64e4e #ffffff
-        binding_mode        #229c56 #229c56 #ffffff
-    }
-}
+# Enable tap to click - will need to change input
+# device id and property number. See [link] for more
+exec_always --no-startup-id xinput set-prop 12 284 1 > /dev/null 2>&1
 
-# i3-gaps
-smart_gaps on
-gaps inner 8
-gaps outer 2
+# Startup daemons for compositor and status bar
+exec_always --no-startup-id pkill picom; picom
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec picom
+# Increase screen contrast (disable for better displays)
+exec_always --no-startup-id xrandr --output eDP --gamma 0.8:0.8:0.8
 
-# startup applications
-exec_always --no-startup-id xautolock -time 10 -locker "i3lock-fancy -f Source-Sans-Pro"
-exec_always --no-startup-id nm-applet
-exec_always --no-startup-id pulseaudio --start
-exec_always --no-startup-id lxpolkit
-exec_always --no-startup-id feh --bg-fill ~/Public/desktop/dark_planet_minimalist.png
-exec_always --no-startup-id picom
+# Use URxvt settings from Xresources
+exec_always --no-startup-id xrdb ~/.Xresources
+
+exec --no-startup-id pulseaudio --start

@@ -16,8 +16,8 @@ bindsym --to-code {
     $mod+shift+d exec rofi -show run -theme '~/rofi-themes/User Themes/flat-orange.rasi'
     $mod+d exec alacritty --title menu_term -e bash /usr/local/bin/menu.sh
     #brightness keys
-    $mod+F7 exec xbacklight -dec 2
-    $mod+F8 exec xbacklight -inc 2
+    $mod+F6 exec light -U 2
+    $mod+F7 exec light -A 2
     
     #clipboard history script similar to menu, but disabled for now
     #wl-clipboard-history doesn't allow copy/pasting of images or files
