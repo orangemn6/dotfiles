@@ -1,0 +1,5 @@
+#!/bin/bash
+swayidle -w  \
+	timeout 1 'lock' \
+	timeout 2 'swaymsg "output * dpms off"' \
+	resume 'swaymsg "output * dpms on"; pkill -nx swayidle'

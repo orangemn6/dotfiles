@@ -1,0 +1,3 @@
+#!/bin/bash
+grim -g "$(slurp)" /tmp/screenshot-area.png
+wl-copy < /tmp/screenshot-area.png

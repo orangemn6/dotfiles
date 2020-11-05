@@ -1,0 +1,4 @@
+#!/usr/bin/python3 -O
+# EASY-INSTALL-SCRIPT: 'ranger-fm==1.9.3','ranger'
+__requires__ = 'ranger-fm==1.9.3'
+__import__('pkg_resources').run_script('ranger-fm==1.9.3', 'ranger')

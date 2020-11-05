@@ -1,0 +1,25 @@
+#!/bin/bash
+FIRST_DISPLAY=$(swaymsg -t get_outputs | grep name | head -n 1 | cut -f4 -d"\"")
+SECOND_DISPLAY=$(swaymsg -t get_outputs | grep name | tail -n 1 | cut -f4 -d"\"")
+if [ $FIRST_DISPLAY != $SECOND_DISPLAY ]; then
+    if [ ! -z $1 ]; then
+        RESOLUTION=$1
+    else
+        RESOLUTION="1920x1080@60Hz"
+    fi
+    #swaymsg output $FIRST_DISPLAY disable
+    swaymsg output $SECOND_DISPLAY disable
+    #swaymsg output $FIRST_DISPLAY enable
+    #swaymsg output $SECOND_DISPLAY enable resolution $RESOLUTION
+    swaymsg workspace 1 output $FIRST_DISPLAY
+    swaymsg workspace 2 output $FIRST_DISPLAY
+    swaymsg workspace 3 output $FIRST_DISPLAY
+    swaymsg workspace 4 output $FIRST_DISPLAY
+    swaymsg workspace 5 output $FIRST_DISPLAY
+    swaymsg workspace 6 output $SECOND_DISPLAY
+    swaymsg workspace 7 output $SECOND_DISPLAY
+    swaymsg workspace 8 output $SECOND_DISPLAY
+    swaymsg workspace 9 output $SECOND_DISPLAY
+    swaymsg workspace 10 output $SECOND_DISPLAY
+    swaymsg output $SECOND_DISPLAY enable resolution $RESOLUTION
+fi

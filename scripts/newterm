@@ -1,0 +1,10 @@
+if [ ! -z $1  ]; then
+	i=0
+	while [ $i -lt "$(echo  $1|bc)" ];do
+		alacritty &
+		i=$[ $i +1 ]
+	done
+else
+	alacritty &
+fi
+

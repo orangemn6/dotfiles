@@ -1,0 +1,15 @@
+export GTK_CSD=0
+export BROWSER=qutebrowser
+#export SDL_VIDEODRIVER=wayland #some games don't work with this
+export FZF_DEFAULT_OPTS=' --color=bg:#262626,bg+:#50fa7b,spinner:#50fa7b,hl:#8484fe,gutter:#4d4d4d --color=fg:#ffffff,header:#8484fe,info:#262626,pointer:#262626 --color=marker:#f1fa8c,fg+:#262626,prompt:#ffffff,hl+:#20206e'
+export NNN_CONTEXT_COLORS='4132'
+export QT_QPA_PLATFORM=wayland-egl
+export QT_QPA_PLATFORMTHEME=qt5ct
+#export QT_STYLE_OVERRIDE=kvantum
+export KITTY_ENABLE_WAYLAND=1
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+export _JAVA_AWT_WM_NONREPARENTING=1
+export CLUTTER_BACKEND=wayland
+export BEMENU_BACKEND=wayland
+urxvtd&
+sway

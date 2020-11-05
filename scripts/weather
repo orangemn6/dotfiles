@@ -1,0 +1,5 @@
+#!/bin/bash
+weather=$(curl -s -4 http://wttr.in/$1)
+echo -e "$weather"
+echo "Press any key to continue..."
+read -n 1
