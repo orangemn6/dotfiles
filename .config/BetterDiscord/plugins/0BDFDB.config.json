@@ -1,0 +1,30 @@
+{
+	"changeLogs": {
+		"BDFDB": "1.6.4",
+		"BadgesEverywhere": "1.6.8",
+		"CharCounter": "1.5.0",
+		"ChatAliases": "2.3.0",
+		"CreationDate": "1.4.1",
+		"EditUsers": "4.1.6",
+		"GoogleTranslateOption": "2.2.4",
+		"ImageUtilities": "4.3.7",
+		"JoinedAtDate": "1.2.6",
+		"MessageUtilities": "1.8.8",
+		"PluginRepo": "2.1.4",
+		"ReadAllNotificationsButton": "1.6.6",
+		"ShowHiddenChannels": "2.9.7"
+	},
+	"choices": {
+		"toastPosition": "right"
+	},
+	"general": {
+		"showToasts": true,
+		"showSupportBadges": true,
+		"useChromium": false
+	},
+	"settings": {
+		"showSupportBadges": true,
+		"showToasts": true,
+		"useChromium": false
+	}
+}

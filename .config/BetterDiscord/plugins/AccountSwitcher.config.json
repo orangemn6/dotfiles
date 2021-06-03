@@ -1,0 +1,29 @@
+{
+    "didShowIssueHelperPopup": true,
+    "currentVersionInfo": {
+        "version": "1.3.2",
+        "hasShownChangelog": true
+    },
+    "settings": {
+        "accounts": [
+            {
+                "name": "Orangemn6#9427",
+                "id": "755856191959334932",
+                "avatar": "https://cdn.discordapp.com/avatars/755856191959334932/fdceb1ed4ece04dc36ec7dba3e82e86d.png?size=128",
+                "keybind": [
+                    64,
+                    10
+                ],
+                "token": "IbAIvcKKWkzGtEbot1Kgfw==:XlWuKlvovAGfV4uiw9uKIwLFUrfs+Skw1YseffvkJ0s7PF1/6cvjdCmUBjVO40+y91TiDuz+tHn+llR7kY9mVW1H0vGafh/HKzh7DoobaIaOuSVsfjQd4f4rEYiiJTjC"
+            }
+        ],
+        "encrypted": false,
+        "encTest": "test",
+        "pluginsToRestart": [
+            "AccountDetailsPlus",
+            "AutoStartRichPresence"
+        ],
+        "encryptionVersion": 2,
+        "salt": "SFD9jn5IoveIJ0Uh3awtrRCjEKB8+PRTO94/AFLq0Tk="
+    }
+}

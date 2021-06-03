@@ -1,0 +1,27 @@
+{
+	"blacklist": [],
+	"categorydata": [],
+	"channels": {
+		"GUILD_TEXT": true,
+		"GUILD_VOICE": true,
+		"GUILD_ANNOUNCEMENT": true,
+		"GUILD_STORE": true,
+		"GUILD_STAGE_VOICE": true
+	},
+	"general": {
+		"sortNative": true,
+		"showVoiceUsers": true,
+		"alwaysCollapse": false,
+		"showForNormal": true
+	},
+	"settings": {
+		"alwaysCollapse": false,
+		"showAnnouncement": true,
+		"showForNormal": true,
+		"showStore": true,
+		"showText": true,
+		"showVoice": true,
+		"showVoiceUsers": true,
+		"sortNative": false
+	}
+}

@@ -1,0 +1,24 @@
+{
+    "didShowIssueHelperPopup": true,
+    "currentVersionInfo": {
+        "version": "2.4.1",
+        "hasShownChangelog": true
+    },
+    "settings": {
+        "tabs": [
+            {
+                "name": "@[object Object]",
+                "url": "/channels/@me/785875969784676373",
+                "selected": true,
+                "iconUrl": "https://cdn.discordapp.com/avatars/542118336071467019/c811af0cb6881800c8e9da1315e6ee95.png?size=128",
+                "channelId": "785875969784676373"
+            }
+        ],
+        "favs": [],
+        "showTabBar": true,
+        "showFavBar": false,
+        "reopenLastChannel": false,
+        "showTabUnreadBadges": true,
+        "showFavUnreadBadges": true
+    }
+}

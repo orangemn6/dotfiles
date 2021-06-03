@@ -1,0 +1,13 @@
+/usr/local/lib
+├── @11ty/eleventy@
+├── bower@1.8.12
+├── firebase-tools@9.12.1
+├── gulp@4.0.2
+├── kahoot.js-updated@2.2.1
+├── lessc@1.0.2
+├── mediumexporter@0.1.6
+├── npm@7.8.0
+├── parrotsay@0.1.0
+├── serve@11.3.2
+└── yarn@1.22.10
+

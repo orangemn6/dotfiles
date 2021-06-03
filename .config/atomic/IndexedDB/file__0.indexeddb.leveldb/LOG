@@ -1,0 +1,26 @@
+2021/06/01-09:14:15.301 2070 Reusing MANIFEST /home/jacob/.config/atomic/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2021/06/01-09:14:15.301 2070 Recovering log #238
+2021/06/01-09:14:15.303 2070 Reusing old log /home/jacob/.config/atomic/IndexedDB/file__0.indexeddb.leveldb/000238.log 
+2021/06/01-09:14:16.250 2079 Compacting 1@1 + 3@2 files
+2021/06/01-09:14:17.039 2079 Generated table #241@1: 4542 keys, 2119777 bytes
+2021/06/01-09:14:17.767 2079 Generated table #242@1: 240 keys, 2109461 bytes
+2021/06/01-09:14:18.220 2079 Generated table #243@1: 2118 keys, 1596154 bytes
+2021/06/01-09:14:18.220 2079 Compacted 1@1 + 3@2 files => 5825392 bytes
+2021/06/01-09:14:18.223 2079 compacted to: files[ 0 0 3 0 0 0 0 ]
+2021/06/01-09:14:18.223 2079 Delete type=2 #237
+2021/06/01-09:14:18.224 2079 Delete type=2 #236
+2021/06/01-09:14:18.225 2079 Delete type=2 #235
+2021/06/01-09:14:18.225 2079 Delete type=2 #239
+2021/06/01-09:14:37.358 2079 Level-0 table #245: started
+2021/06/01-09:14:38.936 2079 Level-0 table #245: 5094078 bytes OK
+2021/06/01-09:14:39.075 2079 Delete type=0 #238
+2021/06/01-09:15:20.881 2079 Compacting 1@1 + 3@2 files
+2021/06/01-09:15:21.101 2079 Generated table #246@1: 4972 keys, 2118989 bytes
+2021/06/01-09:15:21.479 2079 Generated table #247@1: 263 keys, 2129899 bytes
+2021/06/01-09:15:21.587 2079 Generated table #248@1: 2065 keys, 966143 bytes
+2021/06/01-09:15:21.587 2079 Compacted 1@1 + 3@2 files => 5215031 bytes
+2021/06/01-09:15:21.590 2079 compacted to: files[ 0 0 3 0 0 0 0 ]
+2021/06/01-09:15:21.590 2079 Delete type=2 #243
+2021/06/01-09:15:21.591 2079 Delete type=2 #241
+2021/06/01-09:15:21.592 2079 Delete type=2 #242
+2021/06/01-09:15:21.592 2079 Delete type=2 #245

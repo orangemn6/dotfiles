@@ -1,0 +1,29 @@
+{
+	"settings": {
+		"changeInActivity": true,
+		"changeInAppTitle": true,
+		"changeInAutoComplete": true,
+		"changeInChatTextarea": true,
+		"changeInChatWindow": true,
+		"changeInContextMenu": true,
+		"changeInDmCalls": true,
+		"changeInDmHeader": true,
+		"changeInDms": true,
+		"changeInDmsList": true,
+		"changeInFriendList": true,
+		"changeInGuildSettings": true,
+		"changeInInviteList": true,
+		"changeInMemberList": true,
+		"changeInMentions": true,
+		"changeInQuickSwitcher": true,
+		"changeInReactions": true,
+		"changeInRecentDms": true,
+		"changeInSearchPopout": true,
+		"changeInServers": true,
+		"changeInTyping": true,
+		"changeInUserAccount": true,
+		"changeInUserPopout": true,
+		"changeInUserProfile": true,
+		"changeInVoiceChat": true
+	}
+}

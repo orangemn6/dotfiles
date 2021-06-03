@@ -1,0 +1,204 @@
+/**
+ * @name MacIntegration
+ * @version 1.1.2
+ * @description Aligns some parts of Discord's UI with the macOS HIG
+ * @author Jed Fox
+ * @authorLink https://jedfox.com
+ * @authorId 706842348239323199
+ * @website https://jedfox.com
+ * @source https://raw.githubusercontent.com/j-f1/discord-plugins/main/macintegration.theme.css
+ */
+
+/*
+Key:
+.searchBar-6Kv8R2: "Find or start a conversation" on homepage
+.header-2V-4Sw: server name header
+.container-1r6BKw: main title bar/toolbar with channel name
+.macButtons-2MuSAC: window buttons
+.guilds-1SWlCJ: servers sidebar
+.item-3HknzM.themed-OHr7kt: online/all/pending/blocked tabs
+.children-19S4PO: wraps channel title
+.scroller-1Bvpku: server list scroll view
+.scroller-1JbKMe: friends/dms list scroll view
+.strikethrough-*: red slash across icon
+.sidebar-2K8pFh: channel sidebar (list + server name + voice status)
+.container-3w7J-x: channel list
+.topControls-KKImPZ: wraps top bar in voice channel
+.iconWrapper-2OrFZ1: icon buttons in toolbar
+.content-yTz4x3: main text channel content
+.toolbar-1t6TWx: toolbar buttons in title bar
+.base-3dtUhz: the main content excluding the server list
+.expandedFolderBackground-1cujaW, .folder-1hbNCn: expanded folders
+.wrapper-24pKcD: voice connection screen
+.container-3baos1: user area
+.avatar-SmRMf2: user area avatar
+.members-1998pB: chat member sidebar
+*/
+
+/* shrink title bar to match native toolbars */
+.container-1r6BKw,
+.searchBar-6Kv8R2,
+.macButtons-2MuSAC,
+.header-2V-4Sw {
+  height: 38px;
+}
+
+.guilds-1SWlCJ {
+  margin-top: 38px !important;
+  z-index: 1;
+}
+.titleBar-AC4pGV {
+  padding-left: 2px;
+  box-shadow: var(--elevation-low);
+  box-sizing: border-box;
+  width: 73px !important;
+}
+.base-3dtUhz {
+  left: 73px;
+}
+.scroller-1Bvpku {
+  padding-top: 12px !important;
+  background: var(--background-secondary);
+}
+.expandedFolderBackground-1cujaW,
+.folder-1hbNCn {
+  background: var(--background-tertiary);
+}
+
+.children-19S4PO .iconWrapper-2OrFZ1 svg {
+  height: 20px;
+  margin: 0;
+  margin-right: 2px;
+}
+
+/* friends tab bar */
+.item-3HknzM.themed-OHr7kt {
+  margin: 0 4px;
+}
+
+/* tweak shadow */
+.theme-light,
+.theme-dark {
+  --elevation-low: 0 0.5px 0 rgba(0, 0, 0, 0.1);
+}
+.app-focused.theme-light,
+.app-focused .theme-light {
+  /* variant of elevation-medium */
+  --elevation-low: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0.5px 0 rgba(0, 0, 0, 0.1);
+}
+.app-focused.theme-dark,
+.app-focused .theme-dark {
+  /* variant of elevation-medium */
+  --elevation-low: 0 1.5px 1.5px rgba(0, 0, 0, 0.16);
+}
+
+.wrapper-24pKcD:empty + .container-3baos1,
+.wrapper-24pKcD:not(empty) {
+  z-index: 1;
+  box-shadow: var(--elevation-low);
+}
+.wrapper-24pKcD:empty + .container-3baos1,
+.wrapper-24pKcD:not(empty),
+.wrapper-24pKcD:empty + .container-3baos1 > *,
+.wrapper-24pKcD:not(empty) > * {
+  transform: scaleY(-1);
+}
+
+.wrapper-24pKcD .button-1YfofB.buttonColor-7qQbGO,
+.app-focused .wrapper-24pKcD .button-1YfofB.buttonColor-7qQbGO:hover {
+  background: var(--background-tertiary);
+}
+
+.app-focused .wrapper-24pKcD .button-1YfofB.buttonColor-7qQbGO:not(:hover) {
+  background: var(--background-secondary);
+}
+
+/* dim/grayscale UI elements when window is not focused */
+.container-1r6BKw.container-1r6BKw,
+.searchBar-6Kv8R2,
+.header-2V-4Sw,
+.typeMacOS-3EmCyP.titleBar-AC4pGV,
+.app-focused .panels-j1Uci_ > *,
+:root:not(.app-focused) .panels-j1Uci_ > * {
+  background: var(--background-secondary);
+}
+
+:root:not(.app-focused) .scroller-1Bvpku,
+:root:not(.app-focused) .container-3w7J-x,
+:root:not(.app-focused) .scroller-1JbKMe,
+:root:not(.app-focused) .members-1998pB,
+:root:not(.app-focused) .members-1998pB > div {
+  background: var(--background-secondary-alt) !important;
+}
+
+.theme-light:not(.app-focused) .children-19S4PO::after {
+  background: linear-gradient(
+    90deg,
+    hsla(0, 0%, 100%, 0) 0,
+    var(--background-secondary)
+  );
+}
+.theme-dark:not(.app-focused) .children-19S4PO::after {
+  background: linear-gradient(
+    90deg,
+    rgba(54, 57, 63, 0) 0,
+    var(--background-secondary)
+  );
+}
+
+:root:not(.app-focused) [aria-controls="ADD_FRIEND-tab"],
+:root:not(.app-focused) .scroller-2TZvBN > * {
+  filter: grayscale();
+}
+:root:not(.app-focused) [class^="strikethrough"] {
+  color: currentColor;
+  opacity: 0.75;
+}
+
+.searchBar-6Kv8R2 {
+  padding: 0 5px;
+}
+
+/* make the title bar white to match Big Sur */
+.app-focused .container-1r6BKw.container-1r6BKw,
+.app-focused .searchBar-6Kv8R2,
+.app-focused .header-2V-4Sw,
+.app-focused .typeMacOS-3EmCyP.titleBar-AC4pGV,
+.app-focused .panels-j1Uci_ > * {
+  background: var(--background-primary);
+}
+
+.header-2V-4Sw {
+  transition: none; /* fix crossfade when switching apps */
+  z-index: 3001; /* hide shadow of window buttons */
+}
+
+/* divider between channel list and main body */
+.sidebar-2K8pFh,
+.guilds-1SWlCJ,
+.titleBar-AC4pGV {
+  border-right: 0.5px solid var(--background-tertiary);
+}
+
+/* always show top controls in voice channel */
+.topControls-KKImPZ {
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+/* highlight icons on hover */
+.toolbar-1t6TWx .iconWrapper-2OrFZ1 {
+  padding: 3px;
+  margin: 0 4px;
+  height: 30px;
+  border-radius: 5px;
+}
+.toolbar-1t6TWx .iconWrapper-2OrFZ1:hover {
+  background: var(--background-modifier-selected);
+}
+
+/* make shadow consistent across title bar */
+.content-yTz4x3::before {
+  top: -38px;
+  height: 38px;
+}

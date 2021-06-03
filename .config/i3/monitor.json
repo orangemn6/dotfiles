@@ -1,0 +1,41 @@
+// vim:ts=4:sw=4:et
+{
+    // floating_con with 1 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "marks": [],
+    "percent": null,
+    "rect": {
+       "height": 499,
+       "width": 706,
+       "x": 1033,
+       "y": 577
+    },
+    "type": "floating_con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "user_on",
+            "geometry": {
+               "height": 497,
+               "width": 704,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "/usr/bin/zsh",
+            "percent": 1,
+            "swallows": [
+               {
+               // "class": "^Terminator$",
+               // "instance": "^terminator$",
+               // "title": "^\\/usr\\/bin\\/zsh$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

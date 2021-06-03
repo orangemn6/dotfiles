@@ -1,0 +1,15 @@
+{
+    "settings": {
+        "clientID": "806725205837611049",
+        "details": "CyberSpace Discord Server",
+        "state": "Being a Head Mod",
+        "largeImageKey": "cyberspace",
+        "largeImageText": "CyberSpace",
+        "button1Label": "Join",
+        "button1URL": "https://discord.gg/yVBH7DRJyf",
+        "button2Label": "Personal Website",
+        "button2URL": "https://orangemn6.netlify.app",
+        "experimentalRPCEventInjection": false,
+        "enableStartTime": true
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jacob/Pictures/wallpapers/coding.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#121015",
+        "foreground": "#d9dceb",
+        "cursor": "#d9dceb"
+    },
+    "colors": {
+        "color0": "#121015",
+        "color1": "#798386",
+        "color2": "#A1A8A7",
+        "color3": "#C5CFAB",
+        "color4": "#D5E2B6",
+        "color5": "#B4BADE",
+        "color6": "#BCC3E4",
+        "color7": "#d9dceb",
+        "color8": "#979aa4",
+        "color9": "#798386",
+        "color10": "#A1A8A7",
+        "color11": "#C5CFAB",
+        "color12": "#D5E2B6",
+        "color13": "#B4BADE",
+        "color14": "#BCC3E4",
+        "color15": "#d9dceb"
+    }
+}
