@@ -1,0 +1,32 @@
+{
+  "accounts" : {
+    "58b79909089e495c8651e0452c052538" : {
+      "accessToken" : "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NzU5ZmI5OTY4YTJiZDVhNjA4MjNhNjMwNTgwZGFmNCIsInlnZ3QiOiJmYWQzODJiMDYxNmI0MzFhYjk3YWRmYWU2YTIyMzlhMiIsInNwciI6IjdhMjNiMDU1MWFkNzQ4NWNhNjZjMzU0M2Q0ZTg1NzJmIiwiaXNzIjoiWWdnZHJhc2lsLUF1dGgiLCJleHAiOjE2MjIyMDg1OTQsImlhdCI6MTYyMjAzNTc5NH0.D8gD9CT9NkDSZTkYFWfTANEB3m7er_FdVgcK4KM1vxc",
+      "eligibleForMigration" : false,
+      "hasMultipleProfiles" : false,
+      "legacy" : false,
+      "localId" : "58b79909089e495c8651e0452c052538",
+      "minecraftProfile" : {
+        "id" : "7a23b0551ad7485ca66c3543d4e8572f",
+        "name" : "Kidjuan_zztop"
+      },
+      "persistent" : true,
+      "remoteId" : "9759fb9968a2bd5a60823a630580daf4",
+      "type" : "Mojang",
+      "userProperites" : 
+      [
+        {
+          "name" : "preferredLanguage",
+          "value" : "es-es"
+        },
+        {
+          "name" : "registrationCountry",
+          "value" : "UY"
+        }
+      ],
+      "username" : "me@orangemn6.xyz"
+    }
+  },
+  "activeAccountLocalId" : "58b79909089e495c8651e0452c052538",
+  "mojangClientToken" : "8c8d3318-a0d8-4d96-8646-975742186367"
+}

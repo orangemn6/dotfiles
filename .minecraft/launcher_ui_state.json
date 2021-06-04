@@ -1,0 +1,7 @@
+{
+  "data" : {
+    "UiEvents" : "{\"hasSeenDialog\":{\"LAUNCHER_RELEASENOTE_61rnrT5t7g0hS7YlV6O9CD\":true},\"hidePlayerSafetyDisclaimer\":{\"fabric-loader-0.11.3-1.16.5_fabric-loader-1.16.5\":true,\"Sigma5_Sigmaaaaa\":true,\"fabric-loader-0.11.3-1.16.5_faf4cfce4b403f8da4b21e51970fd714\":true,\"1.16.5-Aristois_Aristois 1.16.5\":true,\"Sigma5_sigma\":true,\"fabric-loader-0.11.3-1.16.5_fabric\":true,\"Sigma5_13283ff34f0378c8b294a2259b00febc\":true}}",
+    "UiSettings" : "{\"dungeonsDLCFilter\":{\"Owned\":true,\"Bundle\":true,\"DLC\":true},\"javaConfigurationFilter\":{\"release\":true,\"historical\":false,\"snapshot\":false,\"sortBy\":\"last-played\",\"modded\":true},\"lastVisitedGame\":\"java\",\"animate\":{\"transitions\":false,\"playButton\":false}}"
+  },
+  "formatVersion" : 1
+}

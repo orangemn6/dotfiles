@@ -1,0 +1,207 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 3/30/21 10:09 AM
+Description: Unexpected error
+
+java.lang.RuntimeException: Shader compilation failed!
+	at net.coderbot.iris.postprocess.CompositeRenderer.createProgram(CompositeRenderer.java:250)
+	at net.coderbot.iris.postprocess.CompositeRenderer.<init>(CompositeRenderer.java:51)
+	at net.coderbot.iris.pipeline.DeferredWorldRenderingPipeline.<init>(DeferredWorldRenderingPipeline.java:139)
+	at net.coderbot.iris.Iris.createPipeline(Iris.java:362)
+	at net.coderbot.iris.pipeline.PipelineManager.preparePipeline(PipelineManager.java:36)
+	at net.minecraft.class_761.handler$zpk000$iris$beginWorldRender(class_761.java:8133)
+	at net.minecraft.class_761.method_22710(class_761.java)
+	at net.minecraft.class_757.method_3188(class_757.java:727)
+	at net.minecraft.class_757.method_3192(class_757.java:546)
+	at net.minecraft.class_310.method_1523(class_310.java:1048)
+	at net.minecraft.class_310.method_1514(class_310.java:681)
+	at net.minecraft.client.main.Main.main(Main.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.fabricmc.loader.game.MinecraftGameProvider.launch(MinecraftGameProvider.java:226)
+	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:146)
+	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at info.mineshafter.GameStarter.main(GameStarter.java:61)
+Caused by: java.lang.RuntimeException: Failed to compile fragment shader for program composite3
+	at net.coderbot.iris.gl.program.ProgramBuilder.begin(ProgramBuilder.java:64)
+	at net.coderbot.iris.postprocess.CompositeRenderer.createProgram(CompositeRenderer.java:246)
+	... 23 more
+Caused by: java.lang.RuntimeException: Shader compilation failed, see log for details
+	at net.coderbot.iris.gl.shader.GlShader.createShader(GlShader.java:44)
+	at net.coderbot.iris.gl.shader.GlShader.<init>(GlShader.java:23)
+	at net.coderbot.iris.gl.program.ProgramBuilder.begin(ProgramBuilder.java:62)
+	... 24 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.coderbot.iris.postprocess.CompositeRenderer.createProgram(CompositeRenderer.java:250)
+	at net.coderbot.iris.postprocess.CompositeRenderer.<init>(CompositeRenderer.java:51)
+	at net.coderbot.iris.pipeline.DeferredWorldRenderingPipeline.<init>(DeferredWorldRenderingPipeline.java:139)
+	at net.coderbot.iris.Iris.createPipeline(Iris.java:362)
+	at net.coderbot.iris.pipeline.PipelineManager.preparePipeline(PipelineManager.java:36)
+	at net.minecraft.class_761.handler$zpk000$iris$beginWorldRender(class_761.java:8133)
+	at net.minecraft.class_761.method_22710(class_761.java)
+	at net.minecraft.class_757.method_3188(class_757.java:727)
+
+-- Affected level --
+Details:
+	All players: 1 total; [class_746['BuilderMan368'/3078107, l='ClientLevel', x=653.88, y=64.00, z=308.86]]
+	Chunk stats: SodiumChunkCache: 121
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (241,68,257), Chunk: (at 1,4,1 in 15,16; contains blocks 240,0,256 to 255,255,271), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 4467753 game time, 4555734 day time
+	Server brand: BungeeCord (git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:a7c6ede:1549) <- Spigot
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.class_638.method_8538(class_638.java:449)
+	at net.minecraft.class_310.method_1587(class_310.java:2239)
+	at net.minecraft.class_310.method_1514(class_310.java:704)
+	at net.minecraft.client.main.Main.main(Main.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.fabricmc.loader.game.MinecraftGameProvider.launch(MinecraftGameProvider.java:226)
+	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:146)
+	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at info.mineshafter.GameStarter.main(GameStarter.java:61)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Linux (amd64) version 5.9.13-xanmod2
+	Java Version: 1.8.0_282, Private Build
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+	Memory: 297370736 bytes (283 MB) / 882094080 bytes (841 MB) up to 2134114304 bytes (2035 MB)
+	CPUs: 2
+	JVM Flags: 5 total; -Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -Xmn128M
+	Fabric Mods: 
+		autoconfig1u: Auto Config v1 Updated 3.3.1
+		better_mod_button: Better Mod Button 1.1.4
+		cardinal-components-base: Cardinal Components API (base) 2.6.0
+		cardinal-components-world: Cardinal Components API (worlds) 2.6.0
+		cloth-basic-math: Cloth Basic Math 0.5.1
+		cloth-client-events-v0: Cloth Client Events v0 1.4.5
+		cloth-config2: Cloth Config v4 4.8.3
+		cotton-client-commands: Cotton Client Commands 1.0.1+1.16-rc1
+		craftpresence: CraftPresence 1.7.6
+		customportals: Custom Portals 1.3.0
+		dynamicfps: Dynamic FPS 1.2.1
+		fabric: Fabric API 0.27.1+1.16
+		fabric-api-base: Fabric API Base 0.2.1+9354966b7d
+		fabric-biome-api-v1: Fabric Biome API (v1) 3.1.0+2e23b97c3a
+		fabric-blockrenderlayer-v1: Fabric BlockRenderLayer Registration (v1) 1.1.4+6a2618f53a
+		fabric-command-api-v1: Fabric Command API (v1) 1.0.9+6a2618f53a
+		fabric-commands-v0: Fabric Commands (v0) 0.2.0+6a2618f53a
+		fabric-containers-v0: Fabric Containers (v0) 0.1.8+6a2618f53a
+		fabric-content-registries-v0: Fabric Content Registries (v0) 0.2.0+e77439c73a
+		fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.1.2+b7f9825d3a
+		fabric-dimensions-v1: fabric-dimensions-v1 2.0.1+9a6c75813a
+		fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.4.1+6a2618f53a
+		fabric-events-lifecycle-v0: Fabric Events Lifecycle (v0) 0.2.0+6a2618f53a
+		fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.3+a4467d2a3a
+		fabric-item-api-v1: Fabric Item API (v1) 1.2.0+6a2618f53a
+		fabric-item-groups-v0: Fabric Item Groups (v0) 0.2.1+6a2618f53a
+		fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.4+9354966b7d
+		fabric-keybindings-v0: Fabric Key Bindings (v0) 0.2.0+6a2618f53a
+		fabric-language-kotlin: Fabric Language Kotlin 1.4.21+build.1
+		fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 1.2.1+ca58154a7d
+		fabric-loot-tables-v1: Fabric Loot Tables (v1) 1.0.1+6a2618f53a
+		fabric-mining-levels-v0: Fabric Mining Levels (v0) 0.1.2+6a2618f53a
+		fabric-models-v0: Fabric Models (v0) 0.1.1+6a2618f53a
+		fabric-networking-api-v1: Fabric Networking API (v1) 1.0.0+4358fbc63a
+		fabric-networking-blockentity-v0: Fabric Networking Block Entity (v0) 0.2.5+6a2618f53a
+		fabric-networking-v0: Fabric Networking (v0) 0.1.10+6a2618f53a
+		fabric-object-builder-api-v1: Fabric Object Builder API (v1) 1.9.2+6a2618f53a
+		fabric-object-builders-v0: Fabric Object Builders (v0) 0.7.1+6a2618f53a
+		fabric-particles-v1: fabric-particles-v1 0.2.2+6a2618f53a
+		fabric-registry-sync-v0: Fabric Registry Sync (v0) 0.7.1+285766753a
+		fabric-renderer-api-v1: Fabric Renderer API (v1) 0.3.3+6a2618f53a
+		fabric-renderer-indigo: Fabric Renderer - Indigo 0.4.3+6a2618f53a
+		fabric-renderer-registries-v1: Fabric Renderer Registries (v1) 2.2.0+6a2618f53a
+		fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.1.4+6a2618f53a
+		fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 0.1.12+6a2618f53a
+		fabric-rendering-v0: Fabric Rendering (v0) 1.1.1+6a2618f53a
+		fabric-rendering-v1: Fabric Rendering (v1) 1.4.0+6a2618f53a
+		fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.4.2+ca58154a7d
+		fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.1.0+6a2618f53a
+		fabric-structure-api-v1: Fabric Structure API (v1) 1.1.1+f1d8af063a
+		fabric-tag-extensions-v0: Fabric Tag Extensions (v0) 1.1.0+e77439c73a
+		fabric-textures-v0: Fabric Textures (v0) 1.0.5+6a2618f53a
+		fabric-tool-attribute-api-v1: Fabric Tool Attribute API (v1) 1.2.5+6a2618f53a
+		fabricloader: Fabric Loader 0.11.3
+		fabritone: Fabritone 1.6.2
+		iris: Iris 0.3.0-starline
+		java: OpenJDK 64-Bit Server VM 8
+		lambdacontrols: LambdaControls 1.5.0+1.16.2
+		lithium: Lithium 0.6.1
+		meteor-client: Meteor Client 0.3.9
+		minecraft: Minecraft 1.16.5
+		minecraftcapes: MinecraftCapes Mod 10
+		modmenu: Mod Menu 1.14.6+build.31
+		multiconnect: MultiConnect 1.3.34
+		multiconnect-api: MultiConnect API 1.3.34
+		org_apache_httpcomponents_httpclient: httpclient 4.5.10
+		org_apache_httpcomponents_httpcore: httpcore 4.4.12
+		org_apache_httpcomponents_httpmime: httpmime 4.5.10
+		org_jetbrains_annotations: annotations 20.0.0
+		org_jetbrains_kotlin_kotlin-reflect: kotlin-reflect 1.4.21
+		org_jetbrains_kotlin_kotlin-stdlib: kotlin-stdlib 1.4.21
+		org_jetbrains_kotlin_kotlin-stdlib-jdk7: kotlin-stdlib-jdk7 1.4.21
+		org_jetbrains_kotlin_kotlin-stdlib-jdk8: kotlin-stdlib-jdk8 1.4.21
+		org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm: kotlinx-coroutines-core-jvm 1.4.2
+		org_jetbrains_kotlinx_kotlinx-coroutines-jdk8: kotlinx-coroutines-jdk8 1.4.2
+		org_yaml_snakeyaml: snakeyaml 1.26
+		roughlyenoughitems: Roughly Enough Items 5.8.1
+		roughlyenoughitems-api: REI (API) 5.8.1
+		roughlyenoughitems-default-plugin: REI (Default Plugin) 5.8.1
+		roughlyenoughitems-runtime: REI (Runtime) 5.8.1
+		skinswapper: Minecraft Skin Change Mod 2.0.1
+		smoothboot: Smooth Boot 1.16.4-1.4.0
+		sodium: Sodium IRIS-SNAPSHOT
+		spruceui: SpruceUI 1.6.4
+		viafabric: ViaFabric 0.3.1-SNAPSHOT+build-708.1-mc-1.16
+		viaversion: ViaVersion 3.2.1
+		worldedit: WorldEdit 7.2.2+fc3c499
+	Launched Version: fabric-loader-0.11.3-1.16.5
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: Mesa DRI Intel(R) HD Graphics 400 (BSW) GL version 3.0 Mesa 20.2.6, Intel Open Source Technology Center
+	GL Caps: Using framebuffer using OpenGL 3.0
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Type: Client (map_client.txt)
+	Graphics mode: fast
+	Resource Packs: vanilla (incompatible), Fabric Mods
+	Current Language: English (US)
+	CPU: 2x Intel(R) Celeron(R) CPU N3060 @ 1.60GHz
+
+-- Meteor Client --
+Version: 0.3.9
+
+[Combat]:
+Auto32k (auto32k)
+
+[Movement]:
+Air Jump (air-jump)
+No Fall (no-fall)
+
+[Render]:
+Full Bright (full-bright)
+Nametags (nametags)

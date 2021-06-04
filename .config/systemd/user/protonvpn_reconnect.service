@@ -1,0 +1,11 @@
+
+[Unit]
+Description=ProtonVPN Reconnector
+After=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/lib/python3/dist-packages/protonvpn_nm_lib/daemon/dbus_daemon_reconnector.py
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,2 @@
+#This file stores the shaderpack configuration for the shaderpack (internal)
+#Tue Mar 30 08:26:58 EDT 2021

@@ -1,0 +1,73 @@
+{
+  "authenticationDatabase" : {
+    "Orange_legend" : {
+      "accessToken" : "8c918ab1-eb19-1ab5-8569-5cfb2c9b5d3d",
+      "profiles" : {
+        "d41d8cd98f00b204e9800998ecf8427e" : {
+          "displayName" : "Orange_legend"
+        }
+      },
+      "properties" : [],
+      "username" : "Orange_legend"
+    }
+  },
+  "clientToken" : "92abfaad-8398-4784-a674-2cb3bd2fb59a",
+  "launcherVersion" : {
+    "format" : 21,
+    "name" : "",
+    "profilesFormat" : 2
+  },
+  "profiles" : {
+    "13283ff34f0378c8b294a2259b00febc" : {
+      "created" : "2021-05-26T13:11:19.265Z",
+      "icon" : "Enchanting_Table",
+      "javaDir" : "/usr/bin/java",
+      "lastUsed" : "2021-05-26T13:11:57.112Z",
+      "lastVersionId" : "Sigma5",
+      "name" : "Sigma",
+      "type" : "custom"
+    },
+    "3569fbef0e0654d8cfcd096b466275fe" : {
+      "created" : "1970-01-01T00:00:00.000Z",
+      "icon" : "Crafting_Table",
+      "lastUsed" : "1970-01-01T00:00:00.000Z",
+      "lastVersionId" : "latest-snapshot",
+      "name" : "",
+      "type" : "latest-snapshot"
+    },
+    "eedf47d852e97f9a294437b3190950f3" : {
+      "created" : "1970-01-02T00:00:00.000Z",
+      "icon" : "Grass",
+      "lastUsed" : "1970-01-02T00:00:00.000Z",
+      "lastVersionId" : "latest-release",
+      "name" : "",
+      "type" : "latest-release"
+    },
+    "fabric" : {
+      "created" : "1970-01-01T00:00:00.000Z",
+      "icon" : "Furnace",
+      "javaDir" : "/usr/bin/java",
+      "lastUsed" : "2021-05-26T13:30:08.485Z",
+      "lastVersionId" : "fabric-loader-0.11.3-1.16.5",
+      "name" : "fabric",
+      "type" : "custom"
+    }
+  },
+  "selectedUser" : {
+    "account" : "Orange_legend",
+    "profile" : "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "settings" : {
+    "crashAssistance" : true,
+    "enableAdvanced" : false,
+    "enableAnalytics" : true,
+    "enableHistorical" : false,
+    "enableReleases" : true,
+    "enableSnapshots" : false,
+    "keepLauncherOpen" : false,
+    "profileSorting" : "ByLastPlayed",
+    "showGameLog" : false,
+    "showMenu" : false,
+    "soundOn" : false
+  }
+}

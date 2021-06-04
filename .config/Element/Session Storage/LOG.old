@@ -1,0 +1,4 @@
+2021/06/03-11:43:27.812 41a9 Reusing MANIFEST /home/jacob/.config/Element/Session Storage/MANIFEST-000001
+2021/06/03-11:43:27.817 41a9 Recovering log #750
+2021/06/03-11:43:27.819 41a9 (ignoring error) /home/jacob/.config/Element/Session Storage/000750.log: dropping 11029 bytes; Corruption: checksum mismatch
+2021/06/03-11:43:27.819 41a9 Reusing old log /home/jacob/.config/Element/Session Storage/000750.log 

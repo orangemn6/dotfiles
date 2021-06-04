@@ -1,0 +1,371 @@
+[Info: 2021-06-02 02:43:19.631005131: NetQueue.cpp(157)] NetQueue: Setting up.
+[Info: 2021-06-02 02:43:19.631647689: mainLinux.cpp(250)] Running launcher bootstrap (version 928)
+[Info: 2021-06-02 02:43:19.631955955: NetQueue.cpp(575)] NetQueue: worker thread started.
+[Info: 2021-06-02 02:43:19.640556997: Common.cpp(32)] Native Launcher Version: 928
+[Info: 2021-06-02 02:43:19.640614773: Common.cpp(33)] Operating System: Linux
+[Info: 2021-06-02 02:43:19.640644423: Common.cpp(34)] Application Data directory: //.../.minecraft
+[Info: 2021-06-02 02:43:19.640677749: Common.cpp(35)] Executable Path: /.../minecraft-launcher
+[Info: 2021-06-02 02:43:19.640703624: Common.cpp(36)] App Directory dir: //.../bin
+[Info: 2021-06-02 02:43:19.640728112: Common.cpp(37)] Game data directory: //.../.minecraft
+[Info: 2021-06-02 02:43:19.640754187: Common.cpp(38)] Launcher dir: //.../launcher
+[Info: 2021-06-02 02:43:19.640790362: Common.cpp(39)] Java dir: //.../jre-x64
+[Info: 2021-06-02 02:43:19.640817525: Common.cpp(40)] TmpDir dir: //.../MinecraftLauncher.1000
+[Info: 2021-06-02 02:43:19.640843501: Common.cpp(41)] x64: true
+[Info: 2021-06-02 02:43:19.641560534: mainLinux.cpp(331)] resolvedExe: /home/jacob/.minecraft/launcher/minecraft-launcher selfExe: /usr/bin/minecraft-launcher
+[Info: 2021-06-02 02:43:19.641597385: mainLinux.cpp(335)] Top level executable, forwarding signals.
+[Info: 2021-06-02 02:43:19.641906663: Common.cpp(32)] Native Launcher Version: 928
+[Info: 2021-06-02 02:43:19.641951439: Common.cpp(33)] Operating System: Linux
+[Info: 2021-06-02 02:43:19.641993627: Common.cpp(34)] Application Data directory: .../.minecraft
+[Info: 2021-06-02 02:43:19.642039940: Common.cpp(35)] Executable Path: /.../minecraft-launcher
+[Info: 2021-06-02 02:43:19.642086828: Common.cpp(36)] App Directory dir: .../bin
+[Info: 2021-06-02 02:43:19.642142291: Common.cpp(37)] Game data directory: .../.minecraft
+[Info: 2021-06-02 02:43:19.642187854: Common.cpp(38)] Launcher dir: .../.minecraft/launcher
+[Info: 2021-06-02 02:43:19.642293906: Common.cpp(39)] Java dir: .../.minecraft/runtime/jre-x64
+[Info: 2021-06-02 02:43:19.642342956: Common.cpp(40)] TmpDir dir: .../MinecraftLauncher.1000
+[Info: 2021-06-02 02:43:19.642389869: Common.cpp(41)] x64: true
+[Info: 2021-06-02 02:43:19.676913576: mainLinux.cpp(439)] Current executable is not in game directory, update and run game directory version
+[Info: 2021-06-02 02:43:19.677053428: NetQueue.cpp(157)] NetQueue: Setting up.
+[Info: 2021-06-02 02:43:19.677536309: LauncherConfiguration.cpp(292)] Using update preferences at path: .../.minecraft/launcher_profiles.json
+[Info: 2021-06-02 02:43:19.677516296: NetQueue.cpp(575)] NetQueue: worker thread started.
+[Info: 2021-06-02 02:43:19.678337419: LauncherConfiguration.cpp(295)] Failed to read update preferences from .../.minecraft/launcher_profiles.json
+[Info: 2021-06-02 02:43:19.678418657: LauncherConfiguration.cpp(306)] Using update preferences at path: .../.minecraft/launcher_settings.json
+[Info: 2021-06-02 02:43:19.679174929: NetQueue.cpp(585)] NetQueue: Starting net action https://launchermeta.mojang.com/v1/products/launcher/6f083b80d5e6fabbc4236f81d0d8f8a350c665a9/linux.json
+[Info: 2021-06-02 02:43:19.769036821: NetQueue.cpp(428)] NetQueue: Primary ip: 13.225.224.128, Host: launchermeta.mojang.com
+[Info: 2021-06-02 02:43:19.769164973: NetQueue.cpp(504)] NetQueue: Action finished: https://launchermeta.mojang.com/v1/products/launcher/6f083b80d5e6fabbc4236f81d0d8f8a350c665a9/linux.json
+[Info: 2021-06-02 02:43:19.769194311: NetQueue.cpp(532)] NetQueue: Action finalized: https://launchermeta.mojang.com/v1/products/launcher/6f083b80d5e6fabbc4236f81d0d8f8a350c665a9/linux.json
+[Info: 2021-06-02 02:43:19.769647429: LauncherConfiguration.cpp(261)] Error opening: .../.minecraft/launcher/bootstrap.version, Error message: No such file or directory
+[Info: 2021-06-02 02:43:19.769711204: LauncherConfiguration.cpp(198)] Deciding on update with strategy 2 and clientID 2283317767
+[Info: 2021-06-02 02:43:19.769761580: LauncherConfiguration.cpp(215)] Version of launcher-bootstrap is current, no action is necessary.
+[Info: 2021-06-02 02:43:19.769834081: LauncherConfiguration.cpp(233)] launcher-bootstrap update forced
+[Info: 2021-06-02 02:43:19.769904694: LauncherConfiguration.cpp(261)] Error opening: .../.minecraft/launcher/.version, Error message: No such file or directory
+[Info: 2021-06-02 02:43:19.769957420: LauncherConfiguration.cpp(198)] Deciding on update with strategy 2 and clientID 2283317767
+[Info: 2021-06-02 02:43:19.770019971: LauncherConfiguration.cpp(219)] We should change launcher-core-v2 from unknown to 2.2.2528
+[Info: 2021-06-02 02:43:19.770061696: LauncherConfiguration.cpp(233)] launcher-core-v2 update forced
+[Info: 2021-06-02 02:43:19.770108859: mainLinux.cpp(236)] We need to update. Let's do this!
+[Info: 2021-06-02 02:43:19.770149735: mainLinux.cpp(195)] Updating bootstrap and launcher...
+[Info: 2021-06-02 02:43:19.770326462: WindowGTK.cpp(162)] Showing GTK window
+[Info: 2021-06-02 02:43:19.939583469: WindowGTK.cpp(88)] Created GTK window
+[Info: 2021-06-02 02:43:20.010477493: UpdatePistonComponent.cpp(55)] Piston update in folder .../.minecraft/launcher will now run. (https://launchermeta.mojang.com/v1/packages/89c0207efd577b1dc6f6fb8e8c0bc1bab2261382/manifest.json to version 928) (https://launchermeta.mojang.com/v1/packages/5372d9ca9a49e677dfb7b5107d2ff2205656816d/manifest.json to version 2.2.2528)
+[Info: 2021-06-02 02:43:20.010955812: PistonUpdate.cpp(572)] Downloading https://launchermeta.mojang.com/v1/packages/89c0207efd577b1dc6f6fb8e8c0bc1bab2261382/manifest.json
+[Info: 2021-06-02 02:43:20.011449968: NetQueue.cpp(585)] NetQueue: Starting net action https://launchermeta.mojang.com/v1/packages/89c0207efd577b1dc6f6fb8e8c0bc1bab2261382/manifest.json
+[Info: 2021-06-02 02:43:20.033233057: NetQueue.cpp(428)] NetQueue: Primary ip: 13.225.224.128, Host: launchermeta.mojang.com
+[Info: 2021-06-02 02:43:20.033311258: NetQueue.cpp(504)] NetQueue: Action finished: https://launchermeta.mojang.com/v1/packages/89c0207efd577b1dc6f6fb8e8c0bc1bab2261382/manifest.json
+[Info: 2021-06-02 02:43:20.033347071: NetQueue.cpp(532)] NetQueue: Action finalized: https://launchermeta.mojang.com/v1/packages/89c0207efd577b1dc6f6fb8e8c0bc1bab2261382/manifest.json
+[Info: 2021-06-02 02:43:20.033632637: PistonUpdate.cpp(572)] Downloading https://launchermeta.mojang.com/v1/packages/5372d9ca9a49e677dfb7b5107d2ff2205656816d/manifest.json
+[Info: 2021-06-02 02:43:20.034036867: NetQueue.cpp(585)] NetQueue: Starting net action https://launchermeta.mojang.com/v1/packages/5372d9ca9a49e677dfb7b5107d2ff2205656816d/manifest.json
+[Info: 2021-06-02 02:43:20.151080702: NetQueue.cpp(428)] NetQueue: Primary ip: 13.225.224.128, Host: launchermeta.mojang.com
+[Info: 2021-06-02 02:43:20.151189904: NetQueue.cpp(504)] NetQueue: Action finished: https://launchermeta.mojang.com/v1/packages/5372d9ca9a49e677dfb7b5107d2ff2205656816d/manifest.json
+[Info: 2021-06-02 02:43:20.151226329: NetQueue.cpp(532)] NetQueue: Action finalized: https://launchermeta.mojang.com/v1/packages/5372d9ca9a49e677dfb7b5107d2ff2205656816d/manifest.json
+[Info: 2021-06-02 02:43:20.155291016: PistonUpdate.cpp(632)] Target path: .../.minecraft/launcher
+[Info: 2021-06-02 02:43:20.157589444: PistonUpdate.cpp(648)] Staging path: .../MinecraftLauncher.1000/PistonStaging
+[Info: 2021-06-02 02:43:20.196115162: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/3f7f9f6a81bc9ba4133dbb361eaa5fec764c20e5/cef.pak
+[Info: 2021-06-02 02:43:20.197633168: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/f1b64ecf546edcfa929435953cacfd3aafc96c0b/cef_100_percent.pak
+[Info: 2021-06-02 02:43:20.199191300: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/4397f777f92fe96eae3eb3e086037a4a49bbaeb2/cef_200_percent.pak
+[Info: 2021-06-02 02:43:20.200641605: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/3e710d50e4c0c644136afa67093ca38b0a58918d/cef_extensions.pak
+[Info: 2021-06-02 02:43:20.202035422: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/3439b29e19911859421b5c3b8b52371fce386f6b/chrome-sandbox
+[Info: 2021-06-02 02:43:20.203634216: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/3838a4a257b9bc1f2414370d9620d7dd2a1c4c36/minecraft128.png
+[Info: 2021-06-02 02:43:20.393684914: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.393740677: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/3838a4a257b9bc1f2414370d9620d7dd2a1c4c36/minecraft128.png
+[Info: 2021-06-02 02:43:20.394109831: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/3838a4a257b9bc1f2414370d9620d7dd2a1c4c36/minecraft128.png
+[Info: 2021-06-02 02:43:20.394394210: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/5cb7347dcc1f20c4cc74624ca0750ea3b98cfc2b/minecraft16.png
+[Info: 2021-06-02 02:43:20.435089354: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.435150393: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/3439b29e19911859421b5c3b8b52371fce386f6b/chrome-sandbox
+[Info: 2021-06-02 02:43:20.435231806: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/3439b29e19911859421b5c3b8b52371fce386f6b/chrome-sandbox
+[Info: 2021-06-02 02:43:20.435333482: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/0391113ff627eab0c294b5c3e46696598fa72470/minecraft256.png
+[Info: 2021-06-02 02:43:20.441912937: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.441997676: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/5cb7347dcc1f20c4cc74624ca0750ea3b98cfc2b/minecraft16.png
+[Info: 2021-06-02 02:43:20.442106127: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/5cb7347dcc1f20c4cc74624ca0750ea3b98cfc2b/minecraft16.png
+[Info: 2021-06-02 02:43:20.442278079: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/569f95b48a51bd458b8158ca1e0ad877886ea406/minecraft32.png
+[Info: 2021-06-02 02:43:20.460288248: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.460347711: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/f1b64ecf546edcfa929435953cacfd3aafc96c0b/cef_100_percent.pak
+[Info: 2021-06-02 02:43:20.460421012: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/f1b64ecf546edcfa929435953cacfd3aafc96c0b/cef_100_percent.pak
+[Info: 2021-06-02 02:43:20.460520889: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/0ed51a758978d7ef6d2b175af08aa051af1701d9/minecraft48.png
+[Info: 2021-06-02 02:43:20.466203945: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.466298409: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/0391113ff627eab0c294b5c3e46696598fa72470/minecraft256.png
+[Info: 2021-06-02 02:43:20.466376935: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/0391113ff627eab0c294b5c3e46696598fa72470/minecraft256.png
+[Info: 2021-06-02 02:43:20.466475511: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/d9e128b4d384a6156ab2b4b6406bc1ee4a94c4d5/minecraft64.png
+[Info: 2021-06-02 02:43:20.478067802: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.478132003: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/569f95b48a51bd458b8158ca1e0ad877886ea406/minecraft32.png
+[Info: 2021-06-02 02:43:20.478282017: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/569f95b48a51bd458b8158ca1e0ad877886ea406/minecraft32.png
+[Info: 2021-06-02 02:43:20.478388193: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/15ca8509e04a30a8e093f11cee9dcab94f07f4ec/icudtl.dat
+[Info: 2021-06-02 02:43:20.480481494: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.480560632: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/0ed51a758978d7ef6d2b175af08aa051af1701d9/minecraft48.png
+[Info: 2021-06-02 02:43:20.480689496: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/0ed51a758978d7ef6d2b175af08aa051af1701d9/minecraft48.png
+[Info: 2021-06-02 02:43:20.480784722: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/42a7981220fdc954a578539bf44d1389ce6f6557/libEGL.so
+[Info: 2021-06-02 02:43:20.492605554: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.492914070: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/d9e128b4d384a6156ab2b4b6406bc1ee4a94c4d5/minecraft64.png
+[Info: 2021-06-02 02:43:20.493002846: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/d9e128b4d384a6156ab2b4b6406bc1ee4a94c4d5/minecraft64.png
+[Info: 2021-06-02 02:43:20.493107147: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/0236a6ec1622e8b0927185f51cb598350851f6a2/libGLESv2.so
+[Info: 2021-06-02 02:43:20.499369411: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.499431111: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/4397f777f92fe96eae3eb3e086037a4a49bbaeb2/cef_200_percent.pak
+[Info: 2021-06-02 02:43:20.499503237: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/4397f777f92fe96eae3eb3e086037a4a49bbaeb2/cef_200_percent.pak
+[Info: 2021-06-02 02:43:20.499635264: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/e8a173ad77980223cde52b18118f924ed27d2fd0/libcef.so
+[Info: 2021-06-02 02:43:20.544447359: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.544510022: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/3e710d50e4c0c644136afa67093ca38b0a58918d/cef_extensions.pak
+[Info: 2021-06-02 02:43:20.544589448: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/3e710d50e4c0c644136afa67093ca38b0a58918d/cef_extensions.pak
+[Info: 2021-06-02 02:43:20.544695574: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/43b9df4d4b8e4636a8d0f5b0efda510a9277f7a3/liblauncher.so
+[Info: 2021-06-02 02:43:20.575596612: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.575657225: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/42a7981220fdc954a578539bf44d1389ce6f6557/libEGL.so
+[Info: 2021-06-02 02:43:20.575734701: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/42a7981220fdc954a578539bf44d1389ce6f6557/libEGL.so
+[Info: 2021-06-02 02:43:20.575838228: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/08b6997c1969bc1c00227a197aae41daad687602/am.pak
+[Info: 2021-06-02 02:43:20.643743465: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.643802804: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/08b6997c1969bc1c00227a197aae41daad687602/am.pak
+[Info: 2021-06-02 02:43:20.643875542: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/08b6997c1969bc1c00227a197aae41daad687602/am.pak
+[Info: 2021-06-02 02:43:20.643975818: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/cf23a7ff9ad883843574714794c1494230d08ec7/ar.pak
+[Info: 2021-06-02 02:43:20.689063729: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.689122280: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/cf23a7ff9ad883843574714794c1494230d08ec7/ar.pak
+[Info: 2021-06-02 02:43:20.689193468: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/cf23a7ff9ad883843574714794c1494230d08ec7/ar.pak
+[Info: 2021-06-02 02:43:20.689443634: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/2df42dab7dd7a0b4016e862380ba50a2ef92b036/bg.pak
+[Info: 2021-06-02 02:43:20.696005326: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.696062426: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/3f7f9f6a81bc9ba4133dbb361eaa5fec764c20e5/cef.pak
+[Info: 2021-06-02 02:43:20.696139002: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/3f7f9f6a81bc9ba4133dbb361eaa5fec764c20e5/cef.pak
+[Info: 2021-06-02 02:43:20.696318117: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/8eed75ef6b68ba704701980bc2692aaacc8181b9/bn.pak
+[Info: 2021-06-02 02:43:20.734607420: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.734668458: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/2df42dab7dd7a0b4016e862380ba50a2ef92b036/bg.pak
+[Info: 2021-06-02 02:43:20.734744422: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/2df42dab7dd7a0b4016e862380ba50a2ef92b036/bg.pak
+[Info: 2021-06-02 02:43:20.735121989: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/7be6c48a627d37fe74a42d8c67ab625cb3c23a81/ca.pak
+[Info: 2021-06-02 02:43:20.740427253: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.740495179: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/8eed75ef6b68ba704701980bc2692aaacc8181b9/bn.pak
+[Info: 2021-06-02 02:43:20.741639480: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/8eed75ef6b68ba704701980bc2692aaacc8181b9/bn.pak
+[Info: 2021-06-02 02:43:20.741750707: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/f6af3bde68e9c7a1cbecfd2c28ccf60ba379d7cc/cs.pak
+[Info: 2021-06-02 02:43:20.774877797: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.774941785: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/7be6c48a627d37fe74a42d8c67ab625cb3c23a81/ca.pak
+[Info: 2021-06-02 02:43:20.775023761: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/7be6c48a627d37fe74a42d8c67ab625cb3c23a81/ca.pak
+[Info: 2021-06-02 02:43:20.775122787: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/a8cf7e1ef502f2bdc794f277a929315d4f7f59db/da.pak
+[Info: 2021-06-02 02:43:20.777598617: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.777656143: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/f6af3bde68e9c7a1cbecfd2c28ccf60ba379d7cc/cs.pak
+[Info: 2021-06-02 02:43:20.777730094: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/f6af3bde68e9c7a1cbecfd2c28ccf60ba379d7cc/cs.pak
+[Info: 2021-06-02 02:43:20.777822995: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/5019a0674a21dbef80d18391ec31a9a462714af4/de.pak
+[Info: 2021-06-02 02:43:20.812531655: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.812591068: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/5019a0674a21dbef80d18391ec31a9a462714af4/de.pak
+[Info: 2021-06-02 02:43:20.812676769: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/5019a0674a21dbef80d18391ec31a9a462714af4/de.pak
+[Info: 2021-06-02 02:43:20.812777333: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/fd52d9ce27add4170b0cfe2e263cf4394326f7fe/el.pak
+[Info: 2021-06-02 02:43:20.814638543: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.814694131: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/a8cf7e1ef502f2bdc794f277a929315d4f7f59db/da.pak
+[Info: 2021-06-02 02:43:20.814779407: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/a8cf7e1ef502f2bdc794f277a929315d4f7f59db/da.pak
+[Info: 2021-06-02 02:43:20.814870946: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/4e5be30812ed68b7996392e2f909c96724d273fe/en-GB.pak
+[Info: 2021-06-02 02:43:20.847703495: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.847762158: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/4e5be30812ed68b7996392e2f909c96724d273fe/en-GB.pak
+[Info: 2021-06-02 02:43:20.847836621: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/4e5be30812ed68b7996392e2f909c96724d273fe/en-GB.pak
+[Info: 2021-06-02 02:43:20.847943710: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/6075a242c5a75ca2dee440c3567d4a67176d9fda/en-US.pak
+[Info: 2021-06-02 02:43:20.853964121: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.854102835: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/fd52d9ce27add4170b0cfe2e263cf4394326f7fe/el.pak
+[Info: 2021-06-02 02:43:20.854184861: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/fd52d9ce27add4170b0cfe2e263cf4394326f7fe/el.pak
+[Info: 2021-06-02 02:43:20.854324300: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/aad2d09c9a639bd226c8ba6ee586a0b068cfcf48/es-419.pak
+[Info: 2021-06-02 02:43:20.886275538: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.886333714: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/6075a242c5a75ca2dee440c3567d4a67176d9fda/en-US.pak
+[Info: 2021-06-02 02:43:20.886413478: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/6075a242c5a75ca2dee440c3567d4a67176d9fda/en-US.pak
+[Info: 2021-06-02 02:43:20.886514079: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/cee30c275daed596e9c46cfe60ef8be2989ade51/es.pak
+[Info: 2021-06-02 02:43:20.888127986: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.888181061: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/aad2d09c9a639bd226c8ba6ee586a0b068cfcf48/es-419.pak
+[Info: 2021-06-02 02:43:20.888297238: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/aad2d09c9a639bd226c8ba6ee586a0b068cfcf48/es-419.pak
+[Info: 2021-06-02 02:43:20.888391402: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/3d067b24fc13d52039b6210efabb5376e257ff32/et.pak
+[Info: 2021-06-02 02:43:20.918735695: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.918794159: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/cee30c275daed596e9c46cfe60ef8be2989ade51/es.pak
+[Info: 2021-06-02 02:43:20.918870297: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/cee30c275daed596e9c46cfe60ef8be2989ade51/es.pak
+[Info: 2021-06-02 02:43:20.918969773: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/c24db8cb0ba42d7a060477462dc2bf2b56048b00/fa.pak
+[Info: 2021-06-02 02:43:20.927074059: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.927424014: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/3d067b24fc13d52039b6210efabb5376e257ff32/et.pak
+[Info: 2021-06-02 02:43:20.927628191: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/3d067b24fc13d52039b6210efabb5376e257ff32/et.pak
+[Info: 2021-06-02 02:43:20.927739142: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/61e646f14ff98a624d84103738bfd2818211a05f/fi.pak
+[Info: 2021-06-02 02:43:20.959568204: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.959627280: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/61e646f14ff98a624d84103738bfd2818211a05f/fi.pak
+[Info: 2021-06-02 02:43:20.959699843: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/61e646f14ff98a624d84103738bfd2818211a05f/fi.pak
+[Info: 2021-06-02 02:43:20.960025322: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/63277c6ba66827cb1efa13eb0ad190ede15b6fb7/fil.pak
+[Info: 2021-06-02 02:43:20.962677380: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:20.962746868: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/c24db8cb0ba42d7a060477462dc2bf2b56048b00/fa.pak
+[Info: 2021-06-02 02:43:20.962893607: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/c24db8cb0ba42d7a060477462dc2bf2b56048b00/fa.pak
+[Info: 2021-06-02 02:43:20.962992908: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/92ee4cdb05f6877122c90ade14a9b519a062ab29/fr.pak
+[Info: 2021-06-02 02:43:21.002904156: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.002962144: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/92ee4cdb05f6877122c90ade14a9b519a062ab29/fr.pak
+[Info: 2021-06-02 02:43:21.003035583: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/92ee4cdb05f6877122c90ade14a9b519a062ab29/fr.pak
+[Info: 2021-06-02 02:43:21.003133509: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/f21e3fcaee6771e7afe6ad4830e804a49a9cf9ab/gu.pak
+[Info: 2021-06-02 02:43:21.030228113: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.030295226: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/63277c6ba66827cb1efa13eb0ad190ede15b6fb7/fil.pak
+[Info: 2021-06-02 02:43:21.030421178: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/63277c6ba66827cb1efa13eb0ad190ede15b6fb7/fil.pak
+[Info: 2021-06-02 02:43:21.030528604: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/429109df6071d98d7e09cef658dbfb3a707fa4c3/he.pak
+[Info: 2021-06-02 02:43:21.036087197: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.036147348: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/f21e3fcaee6771e7afe6ad4830e804a49a9cf9ab/gu.pak
+[Info: 2021-06-02 02:43:21.036279687: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/f21e3fcaee6771e7afe6ad4830e804a49a9cf9ab/gu.pak
+[Info: 2021-06-02 02:43:21.036382888: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/03850c6f52fe81ed27d3e145c172cc2c45f02a1d/hi.pak
+[Info: 2021-06-02 02:43:21.051775625: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.051847701: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/15ca8509e04a30a8e093f11cee9dcab94f07f4ec/icudtl.dat
+[Info: 2021-06-02 02:43:21.051921814: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/15ca8509e04a30a8e093f11cee9dcab94f07f4ec/icudtl.dat
+[Info: 2021-06-02 02:43:21.052061266: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/acbf659d93d41a8a0b2bf5ec60b8a1ad8e6606cc/hr.pak
+[Info: 2021-06-02 02:43:21.080836453: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.080902441: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/03850c6f52fe81ed27d3e145c172cc2c45f02a1d/hi.pak
+[Info: 2021-06-02 02:43:21.080989180: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/03850c6f52fe81ed27d3e145c172cc2c45f02a1d/hi.pak
+[Info: 2021-06-02 02:43:21.081139707: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/2cf726801712ea6eb978563d9b897d603a08926a/hu.pak
+[Info: 2021-06-02 02:43:21.082707663: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.082764477: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/429109df6071d98d7e09cef658dbfb3a707fa4c3/he.pak
+[Info: 2021-06-02 02:43:21.082851890: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/429109df6071d98d7e09cef658dbfb3a707fa4c3/he.pak
+[Info: 2021-06-02 02:43:21.082945754: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/0a5e9cd0ef659ef7e7f7704a982afb4d2a0e6caf/id.pak
+[Info: 2021-06-02 02:43:21.106967396: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.107026846: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/0a5e9cd0ef659ef7e7f7704a982afb4d2a0e6caf/id.pak
+[Info: 2021-06-02 02:43:21.107098060: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/0a5e9cd0ef659ef7e7f7704a982afb4d2a0e6caf/id.pak
+[Info: 2021-06-02 02:43:21.107196636: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/e656bd2a0a7dc7dc1e610870e23bfe0269452509/it.pak
+[Info: 2021-06-02 02:43:21.115522850: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.115582400: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/2cf726801712ea6eb978563d9b897d603a08926a/hu.pak
+[Info: 2021-06-02 02:43:21.115655901: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/2cf726801712ea6eb978563d9b897d603a08926a/hu.pak
+[Info: 2021-06-02 02:43:21.116044431: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/24a4df3344537d2195851a334d225d1330438bd4/ja.pak
+[Info: 2021-06-02 02:43:21.123292394: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.123349957: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/acbf659d93d41a8a0b2bf5ec60b8a1ad8e6606cc/hr.pak
+[Info: 2021-06-02 02:43:21.123464584: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/acbf659d93d41a8a0b2bf5ec60b8a1ad8e6606cc/hr.pak
+[Info: 2021-06-02 02:43:21.123564585: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/edc80eb36f18864b89866aa1eb69f80c6ad373fc/kn.pak
+[Info: 2021-06-02 02:43:21.146478938: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.146537789: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/24a4df3344537d2195851a334d225d1330438bd4/ja.pak
+[Info: 2021-06-02 02:43:21.146612453: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/24a4df3344537d2195851a334d225d1330438bd4/ja.pak
+[Info: 2021-06-02 02:43:21.146726604: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/95cef8d9bf05e34cf121c6fe0d692029e097d59a/ko.pak
+[Info: 2021-06-02 02:43:21.152422111: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.152640938: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/edc80eb36f18864b89866aa1eb69f80c6ad373fc/kn.pak
+[Info: 2021-06-02 02:43:21.152718252: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/edc80eb36f18864b89866aa1eb69f80c6ad373fc/kn.pak
+[Info: 2021-06-02 02:43:21.152821753: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/6896275140d9c1a046f508d7d431ec289e45680b/lt.pak
+[Info: 2021-06-02 02:43:21.182127984: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.182187635: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/6896275140d9c1a046f508d7d431ec289e45680b/lt.pak
+[Info: 2021-06-02 02:43:21.182318549: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/6896275140d9c1a046f508d7d431ec289e45680b/lt.pak
+[Info: 2021-06-02 02:43:21.182420850: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/186c433aa66a299005e530aefbc619f5010443cd/lv.pak
+[Info: 2021-06-02 02:43:21.184384799: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.184451563: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/95cef8d9bf05e34cf121c6fe0d692029e097d59a/ko.pak
+[Info: 2021-06-02 02:43:21.184539789: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/95cef8d9bf05e34cf121c6fe0d692029e097d59a/ko.pak
+[Info: 2021-06-02 02:43:21.184637527: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/72b642fac3c6793cf2efd1ffc1dddc1febece271/ml.pak
+[Info: 2021-06-02 02:43:21.197427720: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.197486921: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/e656bd2a0a7dc7dc1e610870e23bfe0269452509/it.pak
+[Info: 2021-06-02 02:43:21.197558372: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/e656bd2a0a7dc7dc1e610870e23bfe0269452509/it.pak
+[Info: 2021-06-02 02:43:21.197659223: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/70a8cd9e22171ba20760509705d894dc3f1ad2d7/mr.pak
+[Info: 2021-06-02 02:43:21.234136416: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.234265993: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/186c433aa66a299005e530aefbc619f5010443cd/lv.pak
+[Info: 2021-06-02 02:43:21.234361619: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/186c433aa66a299005e530aefbc619f5010443cd/lv.pak
+[Info: 2021-06-02 02:43:21.234941439: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/e64dd88aa8e4fadff62c369f7cf070ee3a87f058/ms.pak
+[Info: 2021-06-02 02:43:21.244659057: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.244716032: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/72b642fac3c6793cf2efd1ffc1dddc1febece271/ml.pak
+[Info: 2021-06-02 02:43:21.244790408: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/72b642fac3c6793cf2efd1ffc1dddc1febece271/ml.pak
+[Info: 2021-06-02 02:43:21.244890585: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/f4085a33f827a4600a256ceb9560aaeb3a06036a/nb.pak
+[Info: 2021-06-02 02:43:21.250016322: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.250074148: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/70a8cd9e22171ba20760509705d894dc3f1ad2d7/mr.pak
+[Info: 2021-06-02 02:43:21.250146373: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/70a8cd9e22171ba20760509705d894dc3f1ad2d7/mr.pak
+[Info: 2021-06-02 02:43:21.250273637: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/198eef584959042533b2e80c04a4787907fb43b0/nl.pak
+[Info: 2021-06-02 02:43:21.280832559: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.280894160: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/f4085a33f827a4600a256ceb9560aaeb3a06036a/nb.pak
+[Info: 2021-06-02 02:43:21.280974736: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/f4085a33f827a4600a256ceb9560aaeb3a06036a/nb.pak
+[Info: 2021-06-02 02:43:21.281074312: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/d0fe6ff2047b4712193bf3cdbddb37c1d7f74965/pl.pak
+[Info: 2021-06-02 02:43:21.283431515: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.283547642: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/198eef584959042533b2e80c04a4787907fb43b0/nl.pak
+[Info: 2021-06-02 02:43:21.283635843: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/198eef584959042533b2e80c04a4787907fb43b0/nl.pak
+[Info: 2021-06-02 02:43:21.283734419: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/9dbb8d4174846f87ab53afae4f699c861d3570b0/pt-BR.pak
+[Info: 2021-06-02 02:43:21.303047266: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.303339007: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/e64dd88aa8e4fadff62c369f7cf070ee3a87f058/ms.pak
+[Info: 2021-06-02 02:43:21.303424233: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/e64dd88aa8e4fadff62c369f7cf070ee3a87f058/ms.pak
+[Info: 2021-06-02 02:43:21.303530510: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/c9210fdc7e4fd8fb507d7ad99fca2dee591fc938/pt-PT.pak
+[Info: 2021-06-02 02:43:21.307633285: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.307696323: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/d0fe6ff2047b4712193bf3cdbddb37c1d7f74965/pl.pak
+[Info: 2021-06-02 02:43:21.307817537: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/d0fe6ff2047b4712193bf3cdbddb37c1d7f74965/pl.pak
+[Info: 2021-06-02 02:43:21.308642909: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/2c1a07f7b262146d501295dcd214cea0ad23ddf2/ro.pak
+[Info: 2021-06-02 02:43:21.338694975: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.338754225: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/9dbb8d4174846f87ab53afae4f699c861d3570b0/pt-BR.pak
+[Info: 2021-06-02 02:43:21.338829976: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/9dbb8d4174846f87ab53afae4f699c861d3570b0/pt-BR.pak
+[Info: 2021-06-02 02:43:21.338928227: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.338954890: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/c9210fdc7e4fd8fb507d7ad99fca2dee591fc938/pt-PT.pak
+[Info: 2021-06-02 02:43:21.339018366: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/c9210fdc7e4fd8fb507d7ad99fca2dee591fc938/pt-PT.pak
+[Info: 2021-06-02 02:43:21.339231444: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/c4d2c27403e71e5646a7f6b76bfceacd8cddd920/ru.pak
+[Info: 2021-06-02 02:43:21.341292744: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/624438e4b2252bc0ac9bb0033c56f86b11566576/sk.pak
+[Info: 2021-06-02 02:43:21.346125528: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.346244091: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/2c1a07f7b262146d501295dcd214cea0ad23ddf2/ro.pak
+[Info: 2021-06-02 02:43:21.346322980: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/2c1a07f7b262146d501295dcd214cea0ad23ddf2/ro.pak
+[Info: 2021-06-02 02:43:21.346424394: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/e9934334e29509f630008553672f00a6e85e9ed2/sl.pak
+[Info: 2021-06-02 02:43:21.379531546: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.379586547: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/c4d2c27403e71e5646a7f6b76bfceacd8cddd920/ru.pak
+[Info: 2021-06-02 02:43:21.379658810: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/c4d2c27403e71e5646a7f6b76bfceacd8cddd920/ru.pak
+[Info: 2021-06-02 02:43:21.379758249: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.379784924: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/e9934334e29509f630008553672f00a6e85e9ed2/sl.pak
+[Info: 2021-06-02 02:43:21.379844337: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/e9934334e29509f630008553672f00a6e85e9ed2/sl.pak
+[Info: 2021-06-02 02:43:21.379920126: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/f095cfaf2ec1bca4f69a39e9203ecdb8815f2763/sr.pak
+[Info: 2021-06-02 02:43:21.381486932: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/c4cbcf88ab5e453d696ac825390ef460998a1c13/sv.pak
+[Info: 2021-06-02 02:43:21.387213914: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.387332741: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/0236a6ec1622e8b0927185f51cb598350851f6a2/libGLESv2.so
+[Info: 2021-06-02 02:43:21.387414417: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/0236a6ec1622e8b0927185f51cb598350851f6a2/libGLESv2.so
+[Info: 2021-06-02 02:43:21.387547243: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/87b02b47c72dadc14f9ad2935d5ac22223071e0d/sw.pak
+[Info: 2021-06-02 02:43:21.388789108: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.388843722: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/624438e4b2252bc0ac9bb0033c56f86b11566576/sk.pak
+[Info: 2021-06-02 02:43:21.388925223: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/624438e4b2252bc0ac9bb0033c56f86b11566576/sk.pak
+[Info: 2021-06-02 02:43:21.389018199: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/d689f2dc942df8ac1fce913008e8d8f443de7392/ta.pak
+[Info: 2021-06-02 02:43:21.406387010: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.406447336: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/f095cfaf2ec1bca4f69a39e9203ecdb8815f2763/sr.pak
+[Info: 2021-06-02 02:43:21.406938942: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/f095cfaf2ec1bca4f69a39e9203ecdb8815f2763/sr.pak
+[Info: 2021-06-02 02:43:21.407091806: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/dbc7bc3b12a3b8a23fd3f98f862c7e61bb1fbe60/te.pak
+[Info: 2021-06-02 02:43:21.410934078: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.410999078: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/c4cbcf88ab5e453d696ac825390ef460998a1c13/sv.pak
+[Info: 2021-06-02 02:43:21.411088255: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/c4cbcf88ab5e453d696ac825390ef460998a1c13/sv.pak
+[Info: 2021-06-02 02:43:21.411562823: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/1b5aef9e60c2c62d939c2ff27b361718d530b95d/th.pak
+[Info: 2021-06-02 02:43:21.418454457: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.418515032: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/87b02b47c72dadc14f9ad2935d5ac22223071e0d/sw.pak
+[Info: 2021-06-02 02:43:21.418593533: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/87b02b47c72dadc14f9ad2935d5ac22223071e0d/sw.pak
+[Info: 2021-06-02 02:43:21.418728760: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/01edf71fb0d74a6249035cda2a82411bac7bc0df/tr.pak
+[Info: 2021-06-02 02:43:21.425635806: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.425695820: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/d689f2dc942df8ac1fce913008e8d8f443de7392/ta.pak
+[Info: 2021-06-02 02:43:21.425771671: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/d689f2dc942df8ac1fce913008e8d8f443de7392/ta.pak
+[Info: 2021-06-02 02:43:21.426178201: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/da8ec0fe0c159d6f9f65fcf1dea89de84cc88e23/uk.pak
+[Info: 2021-06-02 02:43:21.435557414: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.435616603: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/dbc7bc3b12a3b8a23fd3f98f862c7e61bb1fbe60/te.pak
+[Info: 2021-06-02 02:43:21.435750842: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/dbc7bc3b12a3b8a23fd3f98f862c7e61bb1fbe60/te.pak
+[Info: 2021-06-02 02:43:21.435850443: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/1884288c07c192bfb6c5fd2e3d3372864e31ec33/vi.pak
+[Info: 2021-06-02 02:43:21.461084337: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.461143688: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/1b5aef9e60c2c62d939c2ff27b361718d530b95d/th.pak
+[Info: 2021-06-02 02:43:21.461218814: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/1b5aef9e60c2c62d939c2ff27b361718d530b95d/th.pak
+[Info: 2021-06-02 02:43:21.461317453: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/b56e6ab1a9a487bfe5ff20a184a9ad258d5b53ac/zh-CN.pak
+[Info: 2021-06-02 02:43:21.469934632: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.470033021: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/da8ec0fe0c159d6f9f65fcf1dea89de84cc88e23/uk.pak
+[Info: 2021-06-02 02:43:21.470105484: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/da8ec0fe0c159d6f9f65fcf1dea89de84cc88e23/uk.pak
+[Info: 2021-06-02 02:43:21.470203435: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/9c860b56f9e02800ce67ad9849fb322b901adc85/zh-TW.pak
+[Info: 2021-06-02 02:43:21.474102570: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.474174384: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/1884288c07c192bfb6c5fd2e3d3372864e31ec33/vi.pak
+[Info: 2021-06-02 02:43:21.474900905: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/1884288c07c192bfb6c5fd2e3d3372864e31ec33/vi.pak
+[Info: 2021-06-02 02:43:21.475153033: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/31b6ad3678dde805fe13043ea0d6ac67aa21873c/minecraft-launcher
+[Info: 2021-06-02 02:43:21.488382006: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.488437182: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/b56e6ab1a9a487bfe5ff20a184a9ad258d5b53ac/zh-CN.pak
+[Info: 2021-06-02 02:43:21.488510670: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/b56e6ab1a9a487bfe5ff20a184a9ad258d5b53ac/zh-CN.pak
+[Info: 2021-06-02 02:43:21.488610434: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/98d00b98e09c17366afa02cb75722e3c0e2374c9/snapshot_blob.bin
+[Info: 2021-06-02 02:43:21.496270040: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.496555981: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/9c860b56f9e02800ce67ad9849fb322b901adc85/zh-TW.pak
+[Info: 2021-06-02 02:43:21.496775308: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/9c860b56f9e02800ce67ad9849fb322b901adc85/zh-TW.pak
+[Info: 2021-06-02 02:43:21.496886385: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/2e125c6ee4bfc40a5b5df647057471eae70b6e10/libEGL.so
+[Info: 2021-06-02 02:43:21.526964825: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.527026651: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/98d00b98e09c17366afa02cb75722e3c0e2374c9/snapshot_blob.bin
+[Info: 2021-06-02 02:43:21.527103727: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/98d00b98e09c17366afa02cb75722e3c0e2374c9/snapshot_blob.bin
+[Info: 2021-06-02 02:43:21.527202853: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/2d30d5e78b7e4dd8c1dfa97248afdbd43e080d4e/libGLESv2.so
+[Info: 2021-06-02 02:43:21.553920291: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.553974404: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/31b6ad3678dde805fe13043ea0d6ac67aa21873c/minecraft-launcher
+[Info: 2021-06-02 02:43:21.554464435: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/31b6ad3678dde805fe13043ea0d6ac67aa21873c/minecraft-launcher
+[Info: 2021-06-02 02:43:21.554584186: NetQueue.cpp(585)] NetQueue: Starting net action https://launcher.mojang.com/v1/objects/06d2a92f27eed4e885b02ae3c4d26061965b4155/v8_context_snapshot.bin
+[Info: 2021-06-02 02:43:21.567733458: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.567791222: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/01edf71fb0d74a6249035cda2a82411bac7bc0df/tr.pak
+[Info: 2021-06-02 02:43:21.567865635: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/01edf71fb0d74a6249035cda2a82411bac7bc0df/tr.pak
+[Info: 2021-06-02 02:43:21.572314289: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.572375952: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/2e125c6ee4bfc40a5b5df647057471eae70b6e10/libEGL.so
+[Info: 2021-06-02 02:43:21.572457328: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/2e125c6ee4bfc40a5b5df647057471eae70b6e10/libEGL.so
+[Info: 2021-06-02 02:43:21.597097803: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.597166066: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/06d2a92f27eed4e885b02ae3c4d26061965b4155/v8_context_snapshot.bin
+[Info: 2021-06-02 02:43:21.597250755: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/06d2a92f27eed4e885b02ae3c4d26061965b4155/v8_context_snapshot.bin
+[Info: 2021-06-02 02:43:21.831262099: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:21.831326600: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/2d30d5e78b7e4dd8c1dfa97248afdbd43e080d4e/libGLESv2.so
+[Info: 2021-06-02 02:43:21.831411988: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/2d30d5e78b7e4dd8c1dfa97248afdbd43e080d4e/libGLESv2.so
+[Info: 2021-06-02 02:43:22.285218629: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:22.285280054: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/43b9df4d4b8e4636a8d0f5b0efda510a9277f7a3/liblauncher.so
+[Info: 2021-06-02 02:43:22.285355230: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/43b9df4d4b8e4636a8d0f5b0efda510a9277f7a3/liblauncher.so
+[Info: 2021-06-02 02:43:23.449755232: NetQueue.cpp(428)] NetQueue: Primary ip: 143.204.145.134, Host: launcher.mojang.com
+[Info: 2021-06-02 02:43:23.449850570: NetQueue.cpp(504)] NetQueue: Action finished: https://launcher.mojang.com/v1/objects/e8a173ad77980223cde52b18118f924ed27d2fd0/libcef.so
+[Info: 2021-06-02 02:43:23.449949421: NetQueue.cpp(532)] NetQueue: Action finalized: https://launcher.mojang.com/v1/objects/e8a173ad77980223cde52b18118f924ed27d2fd0/libcef.so
+[Info: 2021-06-02 02:43:23.450178012: PistonUpdate.cpp(746)] Mkdir(/home/jacob/.minecraft/launcher/icons)
+[Info: 2021-06-02 02:43:23.450496341: PistonUpdate.cpp(746)] Mkdir(/home/jacob/.minecraft/launcher/locales)
+[Info: 2021-06-02 02:43:23.450616879: PistonUpdate.cpp(746)] Mkdir(/home/jacob/.minecraft/launcher/swiftshader)
+[Info: 2021-06-02 02:43:23.450924821: PistonUpdate.cpp(767)] CopyFile(/tmp/MinecraftLauncher.1000/PistonStaging/3f7f9f6a81bc9ba4133dbb361eaa5fec764c20e5, /home/jacob/.minecraft/launcher/cef.pak)
+[Info: 2021-06-02 02:43:23.471111204: PistonUpdate.cpp(767)] CopyFile(/tmp/MinecraftLauncher.1000/PistonStaging/f1b64ecf546edcfa929435953cacfd3aafc96c0b, /home/jacob/.minecraft/launcher/cef_100_percent.pak)
+[Info: 2021-06-02 02:43:23.472151091: PistonUpdate.cpp(767)] CopyFile(/tmp/MinecraftLauncher.1000/PistonStaging/4397f777f92fe96eae3eb3e086037a4a49bbaeb2, /home/jacob/.minecraft/launcher/cef_200_percent.pak)
+[Info: 2021-06-02 02:43:23.479440967: PistonUpdate.cpp(767)] CopyFile(/tmp/MinecraftLauncher.1000/PistonStaging/3e710d50e4c0c644136afa67093ca38b0a58918d, /home/jacob/.minecraft/launcher/cef_extensions.pak)
+[Info: 2021-06-02 02:43:23.485311264: PistonUpdate.cpp(792)] Decompress(/tmp/MinecraftLauncher.1000/PistonStaging/ed63f9dbafd2058b94a065a9a8ca0f86029ee4da, /home/jacob/.minecraft/launcher/chrome-sandbox, executable)
+[Info: 2021-06-02 02:43:23.562401001: PistonUpdate.cpp(767)] CopyFile(/tmp/MinecraftLauncher.1000/PistonStaging/3838a4a257b9bc1f2414370d9620d7dd2a1c4c36, /home/jacob/.minecraft/launcher/icons/minecraft128.png)
+[Info: 2021-06-02 02:43:23.562879469: PistonUpdate.cpp(767)] CopyFile(/tmp/MinecraftLauncher.1000/PistonStaging/5cb7347dcc1f20c4cc74624ca0750ea3b98cfc2b, /home/jacob/.minecraft/launcher/icons/minecraft16.png)
+[Info: 2021-06-02 02:43:23.563137685: PistonUpdate.cpp(767)] CopyFile(/tmp/MinecraftLauncher.1000/PistonStaging/0391113ff627eab0c294b5c3e46696598fa72470, /home/jacob/.minecraft/launcher/icons/minecraft256.png)
+[Info: 2021-06-02 02:43:23.563573027: PistonUpdate.cpp(767)] CopyFile(/tmp/MinecraftLauncher.1000/PistonStaging/569f95b48a51bd458b8158ca1e0ad877886ea406, /home/jacob/.minecraft/launcher/icons/minecraft32.png)
+[Info: 2021-06-02 02:43:23.563826043: PistonUpdate.cpp(767)] CopyFile(/tmp/MinecraftLauncher.1000/PistonStaging/0ed51a758978d7ef6d2b175af08aa051af1701d9, /home/jacob/.minecraft/launcher/icons/minecraft48.png)
+[Info: 2021-06-02 02:43:23.564082696: PistonUpdate.cpp(767)] CopyFile(/tmp/MinecraftLauncher.1000/PistonStaging/d9e128b4d384a6156ab2b4b6406bc1ee4a94c4d5, /home/jacob/.minecraft/launcher/icons/minecraft64.png)
+[Info: 2021-06-02 02:43:23.564770767: PistonUpdate.cpp(792)] Decompress(/tmp/MinecraftLauncher.1000/PistonStaging/6bab2e77925515888808c1ef729c5bb1323100dd, /home/jacob/.minecraft/launcher/icudtl.dat)

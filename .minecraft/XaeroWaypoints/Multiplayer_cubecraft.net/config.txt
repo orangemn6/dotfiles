@@ -1,0 +1,7 @@
+usingMultiworldDetection:false
+ignoreServerLevelId:false
+defaultMultiworldId:mw-15625,8,-15625
+teleportationEnabled:true
+usingDefaultTeleportCommand:true
+sortType:NONE
+sortReversed:false

@@ -1,0 +1,159 @@
+---- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 2/1/21, 10:24 AM
+Description: Initializing game
+
+java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to errors, provided by 'viafabric'!
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointUtils.invoke0(EntrypointUtils.java:53)
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointUtils.invoke(EntrypointUtils.java:36)
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointClient.start(EntrypointClient.java:32)
+	at net.minecraft.class_310.<init>(class_310.java:437)
+	at net.minecraft.client.main.Main.main(Main.java:177)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.fabricmc.loader.game.MinecraftGameProvider.launch(MinecraftGameProvider.java:226)
+	at net.fabricmc.loader.launch.knot.Knot.init(Knot.java:139)
+	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:27)
+Caused by: java.lang.NoClassDefFoundError: us/myles/ViaVersion/api/platform/ViaInjector
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at net.fabricmc.loader.util.DefaultLanguageAdapter.create(DefaultLanguageAdapter.java:45)
+	at net.fabricmc.loader.EntrypointStorage$NewEntry.create(EntrypointStorage.java:112)
+	at net.fabricmc.loader.EntrypointStorage$NewEntry.getOrCreate(EntrypointStorage.java:99)
+	at net.fabricmc.loader.EntrypointStorage.lambda$getEntrypointContainers$1(EntrypointStorage.java:184)
+	at net.fabricmc.loader.entrypoint.EntrypointContainerImpl.getEntrypoint(EntrypointContainerImpl.java:37)
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointUtils.invoke0(EntrypointUtils.java:50)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: us.myles.ViaVersion.api.platform.ViaInjector
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at net.fabricmc.loader.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 19 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointUtils.invoke0(EntrypointUtils.java:53)
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointUtils.invoke(EntrypointUtils.java:36)
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointClient.start(EntrypointClient.java:32)
+	at net.minecraft.class_310.<init>(class_310.java:437)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:177)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.fabricmc.loader.game.MinecraftGameProvider.launch(MinecraftGameProvider.java:226)
+	at net.fabricmc.loader.launch.knot.Knot.init(Knot.java:139)
+	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:27)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.4
+	Minecraft Version ID: 1.16.4
+	Operating System: Linux (amd64) version 5.9.13-xanmod2
+	Java Version: 11.0.9.1, Ubuntu
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Ubuntu
+	Memory: 2229592064 bytes (2126 MB) / 2658140160 bytes (2535 MB) up to 3758096384 bytes (3584 MB)
+	CPUs: 2
+	JVM Flags: 3 total; -Xmx3584m -Xms3584m -Xms256m
+	Fabric Mods: 
+		autoconfig1u: Auto Config v1 Updated 3.3.1
+		better_mod_button: Better Mod Button 1.1.4
+		cloth-basic-math: Cloth Basic Math 0.5.1
+		cloth-client-events-v0: Cloth Client Events v0 1.4.5
+		cloth-config2: Cloth Config v4 4.8.3
+		cotton-client-commands: Cotton Client Commands 1.0.1+1.16-rc1
+		dynamicfps: Dynamic FPS 1.2.1
+		fabric: Fabric API 0.27.1+1.16
+		fabric-api-base: Fabric API Base 0.2.0+ab87788d3a
+		fabric-biome-api-v1: Fabric Biome API (v1) 3.1.0+2e23b97c3a
+		fabric-blockrenderlayer-v1: Fabric BlockRenderLayer Registration (v1) 1.1.4+6a2618f53a
+		fabric-command-api-v1: Fabric Command API (v1) 1.0.9+6a2618f53a
+		fabric-commands-v0: Fabric Commands (v0) 0.2.0+6a2618f53a
+		fabric-containers-v0: Fabric Containers (v0) 0.1.8+6a2618f53a
+		fabric-content-registries-v0: Fabric Content Registries (v0) 0.2.0+e77439c73a
+		fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.1.2+b7f9825d3a
+		fabric-dimensions-v1: fabric-dimensions-v1 2.0.1+9a6c75813a
+		fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.4.1+6a2618f53a
+		fabric-events-lifecycle-v0: Fabric Events Lifecycle (v0) 0.2.0+6a2618f53a
+		fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.3+a4467d2a3a
+		fabric-item-api-v1: Fabric Item API (v1) 1.2.0+6a2618f53a
+		fabric-item-groups-v0: Fabric Item Groups (v0) 0.2.1+6a2618f53a
+		fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.1+730711c63a
+		fabric-keybindings-v0: Fabric Key Bindings (v0) 0.2.0+6a2618f53a
+		fabric-language-kotlin: Fabric Language Kotlin 1.4.21+build.1
+		fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 1.2.0+6a2618f53a
+		fabric-loot-tables-v1: Fabric Loot Tables (v1) 1.0.1+6a2618f53a
+		fabric-mining-levels-v0: Fabric Mining Levels (v0) 0.1.2+6a2618f53a
+		fabric-models-v0: Fabric Models (v0) 0.1.1+6a2618f53a
+		fabric-networking-blockentity-v0: Fabric Networking Block Entity (v0) 0.2.5+6a2618f53a
+		fabric-networking-v0: Fabric Networking (v0) 0.1.10+6a2618f53a
+		fabric-object-builder-api-v1: Fabric Object Builder API (v1) 1.9.2+6a2618f53a
+		fabric-object-builders-v0: Fabric Object Builders (v0) 0.7.1+6a2618f53a
+		fabric-particles-v1: fabric-particles-v1 0.2.2+6a2618f53a
+		fabric-registry-sync-v0: Fabric Registry Sync (v0) 0.7.1+285766753a
+		fabric-renderer-api-v1: Fabric Renderer API (v1) 0.3.3+6a2618f53a
+		fabric-renderer-indigo: Fabric Renderer - Indigo 0.4.3+6a2618f53a
+		fabric-renderer-registries-v1: Fabric Renderer Registries (v1) 2.2.0+6a2618f53a
+		fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.1.4+6a2618f53a
+		fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 0.1.12+6a2618f53a
+		fabric-rendering-v0: Fabric Rendering (v0) 1.1.1+6a2618f53a
+		fabric-rendering-v1: Fabric Rendering (v1) 1.4.0+6a2618f53a
+		fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.3.2+1944f3e03a
+		fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.1.0+6a2618f53a
+		fabric-structure-api-v1: Fabric Structure API (v1) 1.1.1+f1d8af063a
+		fabric-tag-extensions-v0: Fabric Tag Extensions (v0) 1.1.0+e77439c73a
+		fabric-textures-v0: Fabric Textures (v0) 1.0.5+6a2618f53a
+		fabric-tool-attribute-api-v1: Fabric Tool Attribute API (v1) 1.2.5+6a2618f53a
+		fabricloader: Fabric Loader 0.11.1
+		fabritone: Fabritone 1.6.2
+		java: OpenJDK 64-Bit Server VM 11
+		lambdacontrols: LambdaControls 1.5.0+1.16.2
+		lambdynlights: LambDynamicLights 1.3.2+1.16.4
+		lithium: Lithium 0.6.0
+		lithium-api: Lithium API 0.6.0
+		meteor-client: Meteor Client 0.3.9
+		minecraft: Minecraft 1.16.4
+		minecraftcapes: MinecraftCapes Mod 10
+		modmenu: Mod Menu 1.14.6+build.31
+		multiconnect: MultiConnect 1.3.34
+		multiconnect-api: MultiConnect API 1.3.34
+		org_jetbrains_annotations: annotations 20.0.0
+		org_jetbrains_kotlin_kotlin-reflect: kotlin-reflect 1.4.21
+		org_jetbrains_kotlin_kotlin-stdlib: kotlin-stdlib 1.4.21
+		org_jetbrains_kotlin_kotlin-stdlib-jdk7: kotlin-stdlib-jdk7 1.4.21
+		org_jetbrains_kotlin_kotlin-stdlib-jdk8: kotlin-stdlib-jdk8 1.4.21
+		org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm: kotlinx-coroutines-core-jvm 1.4.2
+		org_jetbrains_kotlinx_kotlinx-coroutines-jdk8: kotlinx-coroutines-jdk8 1.4.2
+		org_yaml_snakeyaml: snakeyaml 1.26
+		phosphor: Phosphor 0.6.0+build.7
+		roughlyenoughitems: Roughly Enough Items 5.8.1
+		roughlyenoughitems-api: REI (API) 5.8.1
+		roughlyenoughitems-default-plugin: REI (Default Plugin) 5.8.1
+		roughlyenoughitems-runtime: REI (Runtime) 5.8.1
+		smoothboot: Smooth Boot 1.16.4-1.4.0
+		sodium: Sodium 0.1.0
+		spruceui: SpruceUI 1.6.4
+		viafabric: ViaFabric 0.3.1-SNAPSHOT+build-708.1-mc-1.16
+		viaversion: ViaVersion 3.2.1
+	Launched Version: 1.16.4
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: NO CONTEXT
+	GL Caps: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Type: Client (map_client.txt)
+	CPU: <unknown>

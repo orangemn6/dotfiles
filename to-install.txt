@@ -1,0 +1,8 @@
+ls-extended
+pywal
+i3wm
+picom
+emacs-gtk 27
+element
+discord appimage
+brave browser

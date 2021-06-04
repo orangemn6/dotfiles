@@ -1,0 +1,6 @@
+2021/06/03-13:48:34.506 6269 Reusing MANIFEST /home/jacob/.config/Element/Local Storage/leveldb/MANIFEST-000001
+2021/06/03-13:48:34.509 6269 Recovering log #75
+2021/06/03-13:48:34.516 6269 Reusing old log /home/jacob/.config/Element/Local Storage/leveldb/000075.log 
+2021/06/03-17:52:35.462 7c8b Level-0 table #79: started
+2021/06/03-17:52:35.507 7c8b Level-0 table #79: 9792 bytes OK
+2021/06/03-17:52:35.515 7c8b Delete type=0 #75

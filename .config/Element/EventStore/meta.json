@@ -1,0 +1,112 @@
+{
+  "segments": [
+    {
+      "segment_id": "e3b6ed5d-0f88-44db-aa28-1f7648db44d9",
+      "max_doc": 203,
+      "deletes": null
+    },
+    {
+      "segment_id": "82e06122-2c4b-48c3-9476-6a1eb9eaefcd",
+      "max_doc": 2,
+      "deletes": null
+    },
+    {
+      "segment_id": "b3784d77-ec12-4ef9-bdc9-89a3ad07198c",
+      "max_doc": 2,
+      "deletes": null
+    },
+    {
+      "segment_id": "2a7512b9-da46-4b3a-b6b3-8e6285c1bd58",
+      "max_doc": 1,
+      "deletes": null
+    },
+    {
+      "segment_id": "640eebd0-aaa2-4dc3-8856-71c09c78645b",
+      "max_doc": 1,
+      "deletes": null
+    },
+    {
+      "segment_id": "8b476c4b-755a-4a4b-8ada-1567918cf369",
+      "max_doc": 1,
+      "deletes": null
+    }
+  ],
+  "schema": [
+    {
+      "name": "body",
+      "type": "text",
+      "options": {
+        "indexing": {
+          "record": "position",
+          "tokenizer": "default"
+        },
+        "stored": false
+      }
+    },
+    {
+      "name": "topic",
+      "type": "text",
+      "options": {
+        "indexing": {
+          "record": "position",
+          "tokenizer": "default"
+        },
+        "stored": false
+      }
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "options": {
+        "indexing": {
+          "record": "position",
+          "tokenizer": "default"
+        },
+        "stored": false
+      }
+    },
+    {
+      "name": "date",
+      "type": "u64",
+      "options": {
+        "indexed": false,
+        "fast": "single",
+        "stored": false
+      }
+    },
+    {
+      "name": "sender",
+      "type": "text",
+      "options": {
+        "indexing": {
+          "record": "basic",
+          "tokenizer": "raw"
+        },
+        "stored": false
+      }
+    },
+    {
+      "name": "room_id",
+      "type": "text",
+      "options": {
+        "indexing": {
+          "record": "basic",
+          "tokenizer": "raw"
+        },
+        "stored": true
+      }
+    },
+    {
+      "name": "event_id",
+      "type": "text",
+      "options": {
+        "indexing": {
+          "record": "basic",
+          "tokenizer": "raw"
+        },
+        "stored": true
+      }
+    }
+  ],
+  "opstamp": 664
+}
